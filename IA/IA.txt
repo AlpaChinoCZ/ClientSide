@@ -1,0 +1,30 @@
+                                [Homepage]
+                                   |
+              ┌────────────────────┼─────────────────────┐───────────────────────────────────┐
+              |                    |                     |
+       [Search & Results]     [User Dashboard]     [Host Dashboard]			[Help Center]
+              |                    |                     |				     |
+    ┌────────────────┐     ┌──────────────────┐   ┌──────────────────┐			   [FAQs]
+    |    Map View    |     | Saved Berths     |   | Listing Management|			   [Contact Support]
+    |    List View   |     | Booking History  |   | Calendar          |
+    └────────────────┘     | Messages         |   | Booking Requests  |
+              |            | Profile Settings |   | Earnings Overview |
+      ┌─────────────┐      └──────────────────┘   | Review Management |
+      | Berth Details|                           └──────────────────┘
+      └─────────────┘
+              |
+     ┌───────────────┐
+     | Booking Steps |
+     └───────────────┘
+              |
+     ┌──────────────┐
+     | Confirmation |
+     └──────────────┘
+              |
+           [Help Center]
+              |
+     ┌────────────────┬────────────────┐
+     |      FAQs      |   Live Chat    |   
+     └────────────────┴────────────────┘
+                              |
+                    [Legal & Policy Pages]
