@@ -7,20 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script>
-    // Dynamické načtení headeru
-    fetch('header.html')
-        .then(response => {
-            if (!response.ok) throw new Error("Failed to fetch header.");
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('header-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading header:', error));
-</script>
     <div class="container">
-
+        <!-- Header bude načten dynamicky -->
+        <div id="header-placeholder"></div>
+        <script>
+            // Dynamické načtení headeru
+            fetch('header.html')
+                .then(response => {
+                    if (!response.ok) throw new Error("Failed to fetch header.");
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        </script>
         <div class="form-container">
             <h1>Login</h1>
             <form id="loginForm">
