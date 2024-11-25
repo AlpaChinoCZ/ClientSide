@@ -3,6 +3,7 @@
 
     --header-height: 7.5rem;
 
+    --section-offset: 50px;
     --section-light: white;
     --section-dark: #cce0ff;
 
@@ -131,13 +132,13 @@ nav ul li a:hover {
 
 /* SECTIONS */
 .new-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: var(--section-offset);
+    padding-bottom: var(--section-offset);
 }
 
 .new-section--first {
-    margin-top: var(--header-height);
-    margin-bottom: 50px;
+    margin-top: calc(var(--header-height) + var(--section-offset));
+    margin-bottom: var(--section-offset);
 }
 
 .new-section:nth-child(odd){
