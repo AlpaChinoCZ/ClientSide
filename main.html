@@ -17,26 +17,33 @@
                         <h1>LOGO</h1>
                     </div>
                     <ul>
-                        <li>
+                        <li id="can-disable">
                             <a href="#">Home</a>
                         </li>
-                        <li>
+                        <li id="can-disable">
                             <a href="#">Ports</a>
                         </li>
-                        <li>
+                        <li id="can-disable">
                             <a href="#">About</a>
                         </li>
-                        <li>
+                        <li id="can-disable">
                             <a href="#">Contact</a>
                         </li>
-                        <li class="search-container">
-                            <form action="/search" method="get">
-                                <div></div>
-                                <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">                                
-                                <label class="button search-button" for="searchright">
+                        <li class="search-container">                            
+                            <form action="/search" method="get">                                
+                                <label class="button search-button" id="search-btn" for="searchright">
                                     <span class="mglass">&#9906;</span>
                                 </label>
                             </form>
+                            <div class="search-expand" id ="expand">
+                                <div class="search-close" id="search-close-btn">
+                                    <p>Close></p>
+                                </div>
+                                <input class="search-bar" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li>
+                            <a class="get-started" href="#">Get Started</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,16 +61,40 @@
 
             <footer>
                 <div class="socials content-max-width">
-                    <a href="https://facebook.com" target="_blank">Facebook [nové okno]</a>
-                    <a href="https://instagram.com" target="_blank">Instagram [nové okno]</a>
+                    <div class="socials__part">
+                        <div class="logo__footer">
+                            <img src="./Images/logoipsum.svg" alt="logo" />
+                            <h1>LOGO</h1>
+                        </div>
+                    </div>
+                    <div class="socials__part socials__part--middle">
+                        <ul>
+                            <li id="can-disable">
+                                <a href="#">Home</a>
+                            </li>
+                            <li id="can-disable">
+                                <a href="#">Ports</a>
+                            </li>
+                            <li id="can-disable">
+                                <a href="#">About</a>
+                            </li>
+                            <li id="can-disable">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socials__part socials__part--right">
+                        
+                    </div>
                 </div>
+                <hr class="rounded content-max-width">
                 <aside class="aside_footer content-max-width">
                     <p>ČZU ©2024</p>
                     <p>Stránka byla vytvořena jako studentský projekt.</p>
                 </aside>
             </footer>
 
-            <script src="index.js"></script>            
+            <script src="./script.js"></script>            
         </div>        
     </body>
 </html>
