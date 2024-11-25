@@ -8,11 +8,16 @@
 </head>
 <body>
 <script>
-    // Dynamické načtení souboru header.html
+    // Dynamické načtení headeru
     fetch('header.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('header').innerHTML = data)
-        .catch(error => console.error('Error loading the header:', error));
+        .then(response => {
+            if (!response.ok) throw new Error("Failed to fetch header.");
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
 </script>
     <div class="container">
 
