@@ -10,8 +10,28 @@
     <div class="container">
         <!-- Header bude načten dynamicky -->
         <div id="header-placeholder"></div>
+        <main>
+            <div class="login-page">
+                <div class="form-container">
+                    <h1>Přihlášení</h1>
+                    <form action="/login" method="post">
+                        <label for="username">Uživatelské jméno</label>
+                        <input type="text" id="username" name="username" placeholder="Zadejte uživatelské jméno" required>
+
+                        <label for="password">Heslo</label>
+                        <input type="password" id="password" name="password" placeholder="Zadejte heslo" required>
+
+                        <button type="submit">Přihlásit se</button>
+                    </form>
+                    <p>Nemáte účet? <a href="/register">Zaregistrujte se</a></p>
+                </div>
+            </div>
+        </main>
+        <!-- Footer bude načten dynamicky -->
+        <div id="footer-placeholder"></div>
+        <script src="script.js"></script>
         <script>
-            // Dynamické načtení headeru
+            // Načtení headeru
             fetch('header.html')
                 .then(response => {
                     if (!response.ok) throw new Error("Failed to fetch header.");
@@ -21,8 +41,18 @@
                     document.getElementById('header-placeholder').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading header:', error));
+
+            // Načtení footeru
+            fetch('footer.html')
+                .then(response => {
+                    if (!response.ok) throw new Error("Failed to fetch footer.");
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading footer:', error));
         </script>
     </div>
-<script src="script.js"></script>
 </body>
 </html>
