@@ -2,7 +2,9 @@
     --color-placeholder: grey;
 
     --header-height: 7.5rem;
-    --footer-height: 200px;
+
+    --section-light: white;
+    --section-dark: #cce0ff;
 
     --min-sm: 576px;    /*small*/
     --min-md: 768px;    /*medium*/
@@ -129,12 +131,21 @@ nav ul li a:hover {
 
 /* SECTIONS */
 .new-section {
-    padding-top: 4.5rem;
-    padding-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .new-section--first {
     margin-top: var(--header-height);
+    margin-bottom: 50px;
+}
+
+.new-section:nth-child(odd){
+    background-color: var(--section-light);;
+}
+    
+.new-section:nth-child(even){
+    background-color: var(--section-dark);
 }
 
 
