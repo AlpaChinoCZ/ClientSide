@@ -288,10 +288,63 @@ footer ul li a {
 }
 
 /* HOMEPAGE */
-.reserve-container{
+.reserve__container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;    
+    
     
     padding-left: var(--section-side-padding);
     padding-right: var(--section-side-padding);
+}
+.reserve__column {
+    flex:1;
+}
+
+.reserve__container img {
+    margin-left: 50px;
+    max-width:100%;
+}
+
+.reserve__text {
+
+}
+
+.reserve__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+}
+
+.reserve__date input{    
+    outline: none;
+    border-radius: 100vh;
+    border: none; /* Optional: Remove border if present */
+    box-shadow: inset 0 0 0 1px #444;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+}
+
+.reserve__select {
+    background-color: var(--section-dark);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.reserve__searchbar {
+
+}
+
+.reserve__date-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    gap: 20px;
 }
