@@ -5,12 +5,18 @@ document.getElementById('search-btn').onclick = function() {
     top = style.getPropertyValue('display');
 
     if (top === "none"){
-        document.getElementById('can-disable').classList.toggle('disable-nav')
+        var elements = document.getElementsByClassName("can-disable")
+        for(var i = 0; i < elements.length; i++) {
+            elements[i].classList.toggle('disable-nav')
+        }
         document.getElementById('expand').classList.toggle('expanded')
     }  
 }
 
 document.getElementById('search-close-btn').onclick = function() {
     document.getElementById('expand').classList.toggle('expanded')    
-    document.getElementById('can-disable').classList.toggle('disable-nav')
+    var elements = document.getElementsByClassName("can-disable")
+    for(var i = 0; i < elements.length; i++) {
+        elements[i].classList.toggle('disable-nav')
+    }
 }
