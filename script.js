@@ -20,3 +20,14 @@ document.getElementById('search-close-btn').onclick = function() {
         elements[i].classList.toggle('disable-nav')
     }
 }
+// login
+// Example validation for forms
+document.getElementById('loginForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Login successful!');
+});
+
+document.getElementById('registerForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Registration successful!');
+});
