@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    <script src="index.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BerthRent</title>
+        <link rel="stylesheet" href="./style.css">
+        <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    </head>
+    <body>
+        <div class="container">            
+            <header class="header">
+                <nav class="content-max-width">
+                    <div class="logo">
+                        <img src="./Images/logoipsum.svg" alt="logo" />
+                        <h1>LOGO</h1>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Ports</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="search-container">
+                            <form action="/search" method="get">
+                                <div></div>
+                                <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">                                
+                                <label class="button search-button" for="searchright">
+                                    <span class="mglass">&#9906;</span>
+                                </label>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main>
+                <section class="new-section--first content-max-width">
+
+                </section>
+
+                <section class="new-section content-max-width">
+
+                </section>
+            </main>
+
+            <footer>
+                <div class="socials content-max-width">
+                    <a href="https://facebook.com" target="_blank">Facebook [nové okno]</a>
+                    <a href="https://instagram.com" target="_blank">Instagram [nové okno]</a>
+                </div>
+                <aside class="aside_footer content-max-width">
+                    <p>ČZU ©2024</p>
+                    <p>Stránka byla vytvořena jako studentský projekt.</p>
+                </aside>
+            </footer>
+
+            <script src="index.js"></script>            
+        </div>        
+    </body>
 </html>
