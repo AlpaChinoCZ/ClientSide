@@ -446,3 +446,11 @@ footer ul li a {
 .faq__icon{
     width: 250px;
 }
+
+/* SEARCH */
+.search__filter {
+    width: 300px;
+    background-color:  var(--section-dark);
+    border-radius: 20px;
+    padding: 20px;
+}
