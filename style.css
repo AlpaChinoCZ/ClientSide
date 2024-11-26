@@ -132,6 +132,10 @@ main {
     row-gap: 50px;
 }
 
+.flex-start{
+    justify-content: start;
+}
+
 .flex-right{
     justify-content: right;
 }
@@ -449,8 +453,100 @@ footer ul li a {
 
 /* SEARCH */
 .search__filter {
-    width: 300px;
+    width: 250px;
     background-color:  var(--section-dark);
     border-radius: 20px;
     padding: 20px;
 }
+
+.serach__container{
+    padding-left: 50px;
+}
+
+.serach__dropdown {
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.serach__results{
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.serach__results div{
+    background-color: var(--section-dark);
+}
+
+.serach__results img{
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.test{
+    display: inline-block;
+}
+
+/* CHECKBOX */
+.checkbox-wrapper .control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.checkbox-wrapper .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.checkbox-wrapper .control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+}
+.checkbox-wrapper .control:hover input ~ .control__indicator,
+.checkbox-wrapper .control input:focus ~ .control__indicator {
+    background: #ccc;
+}
+.checkbox-wrapper .control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+}
+.checkbox-wrapper .control:hover input:not([disabled]):checked ~ .control__indicator,
+.checkbox-wrapper .control input:checked:focus ~ .control__indicator {
+    background: #0e647d;
+}
+.checkbox-wrapper .control input:disabled ~ .control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.checkbox-wrapper .control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+.checkbox-wrapper .control input:checked ~ .control__indicator:after {
+    display: block;
+}
+.checkbox-wrapper .control--checkbox .control__indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.checkbox-wrapper .control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+}
+

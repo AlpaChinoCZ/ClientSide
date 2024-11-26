@@ -52,7 +52,7 @@
             <main>
                 <section class="new-section--first">
                     <div class="content-max-width flex-row">
-                        <div class="flex-column gap-row-20">
+                        <form class="flex-column  flex-start gap-row-20">
                             <div class="flex-column search__filter">
                                 <h3>Location & date</h3>
                                 <div class="flex-column">
@@ -68,23 +68,150 @@
                                 </div>
                             </div>
                             <div class="flex-column search__filter">
-                                <h3>Location & date</h3>
+                                <h3>Berth dimensions</h3>
+                                <div class="flex-column ">
+                                    <label for="start_date">Max length</label>
+                                    <input class="reserve__input" type="text" id="start_date" name="start_date" placeholder="Enter your boat's lenght" required>
+                                </div>
                                 <div class="flex-column">
-                                    <p>Berth dimensions</p>
-                                    <div class="flex-column flex-1">
-                                        <label for="start_date">Starting date</label>
-                                        <input class="reserve__input" type="date" id="start_date" name="start_date" required>
+                                    <label for="end_date">Max width</label>
+                                    <input class="reserve__input" type="text" id="end_date" name="end_date" placeholder="Enter your boat's width" required>
+                                </div>                                    
+                                <div class="flex-column">
+                                    <label for="end_date">Max draft</label>
+                                    <input class="reserve__input" type="text" id="end_date" name="end_date" placeholder="Enter your boat's draft" required>
+                                </div>                                
+                            </div>
+                            <div class="flex-column search__filter gap-row-30">
+                                <h3>Other requirements</h3>
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Fuel
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>     
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Security
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>      
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Wi-fi
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>        
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Accommodation
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>   
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Frash water
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>       
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Restaurant
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div> 
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Laundry
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div>  
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Car park
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div> 
+                                <div class="checkbox-wrapper">
+                                    <label class="control control--checkbox">
+                                        Electricity
+                                        <input type="checkbox" />
+                                        <div class="control__indicator"></div>
+                                    </label>
+                                </div> 
+                            </div>                            
+                            <input class="button-basic" type="reset" value="Reset filters"/>                        
+                        </form>                        
+                        <div class="flex-column flex-start serach__container">
+                            <h1>We found 6 available ports</h1>
+                            <p>We've matched your search criteria and found these options for you!</p>
+                            <p>To refine your search further and discover the best match, use the filters on the left-hand side.</p>
+                            <p>Ready to book? Select a port to see more details, including pricing, amenities, and availability.</p>
+                            <div>
+                                <p>Filter search result by:</p>
+                                <label for="filter">Select Category:</label>
+                                <select id="filter" class="serach__dropdown">
+                                    <option value="none">None</option>
+                                    <option value="price">Price</option>
+                                    <option value="fate">Date</option>
+                                    <option value="destination">Destination</option>
+                                </select>
+                            </div>
+                            <div class="serach__results">
+                                <div class="port__block flex-column">
+                                    <div>
+                                        <img src="./Images/MarineBerth.avif">
                                     </div>
-                                    <div class="flex-column flex-1">
-                                        <label for="end_date">Ending date</label>
-                                        <input class="reserve__input" type="date" id="end_date" name="end_date" required>
+                                    <h3>Port of Felixtowe</h3>
+                                    <p>United Kingdoms</p>
+                                    <div class="flex-row flex-left">
+                                        <p>Bert size:</p>
+                                        <p>Various</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <div class="flex-row flex-left">
+                                            <p>Price: </p><p>51$ / day</p>
+                                        </div>
+                                        <a class="flex-right" href="#">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="port__block flex-column">
+                                    <div>
+                                        <img src="./Images/MarineBerth.avif">
+                                    </div>
+                                    <h3>Port of Felixtowe</h3>
+                                    <p>United Kingdoms</p>
+                                    <div class="flex-row">
+                                        <p>Bert size: </p><p>Various</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <p>Price: </p><p>51$ / day</p>
+                                        <a class="flex-right" href="#">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="port__block flex-column">
+                                    <div>
+                                        <img src="./Images/MarineBerth.avif">
+                                    </div>
+                                    <h3>Port of Felixtowe</h3>
+                                    <p>United Kingdoms</p>
+                                    <div class="flex-row">
+                                        <p>Bert size: </p><p>Various</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <p>Price: </p><p>51$ / day</p>
+                                        <a class="flex-right" href="#">Learn more</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div>
-
                         </div>
                     </div>
                 </section>
