@@ -23,8 +23,30 @@ document.getElementById('search-close-btn').onclick = function() {
 
 function myMap() {
     var mapProp= {
-      center:new google.maps.LatLng(51.508742,-0.120850),
-      zoom:5,
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
+}
+
+
+const toggles = document.querySelectorAll('.faq-toggle');
+
+toggles.forEach(toggle => {
+	toggle.addEventListener('click', () => {
+		toggle.parentNode.classList.toggle('active');
+	});
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
