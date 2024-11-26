@@ -567,6 +567,23 @@ footer ul li a {
     row-gap: 20px;
 }
 
+/* RESERVATION */
+.reservation{
+    background-color: var(--section-dark);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.reservation__field{
+    border-radius: 100vh;
+    height: 45px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--section-light);
+    line-height: 45px;
+}
+
 
 /* CHECKBOX */
 .checkbox-wrapper .control {
