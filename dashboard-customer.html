@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berth Rental Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/fetchHeaderFooter.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="header-placeholder"></div>
+    <main>
+        <div class="dashboard-container">
+            <section class="welcome-section">
+                <table class="welcome-table">
+                    <tr class="left">
+                        <td class="welcome-text">
+                            <h1>Welcome to your<br> reservation dashboard!</h1>
+                            <p>
+                                Here you can easily view your current reservations, including the details of your reserved berth,
+                                as well as your past bookings and rents. Stay up to date with all your dockings and manage future stays with just a few clicks.
+                            </p>
+                        </td>
+                        <td class="welcome-image">
+                            <img src="/assets/img/DALL·E%202024-11-26%2021.56.38%20-%20A%20scenic%20view%20of%20a%20harbor.webp" alt="Dashboard illustration">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Owned Ports and Berths Section -->
+            <section class="ports-section">
+                <h2>Currently reserved berths</h2>
+                <p>View current reservation is displayed below, icluding all the details such as a port, berth size and reservation dates.</p>
+                <div class="table-container">
+                    <table class="custom-table">
+                        <tr>
+                            <td class="image-cell" rowspan="2">
+                                <img src="assets/img/Aerial_view_of_the_Port_of_Felixstowe.jpg" alt="Port Image">
+                            </td>
+                            <td class="port-info">
+                                <strong>United Kingdom</strong>
+                                <h2>Port of Felixstowe</h2>
+                                <div class="berth-info">
+                                    Small Berth 01 – North Dock A<br>
+                                    <span>Max width: 5m | Max length: 8m | Draft: 2m</span>
+                                </div>
+                            </td>
+                            <td class="earned" rowspan="2">
+                                <span>Total price:</span>
+                                <span class="amount">€199</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="berth-date">
+                                Reservation date:<br>
+                                <strong>09/08/2024 - 08/06/2024</strong>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <!-- Register a New Port Section -->
+                <div>
+                    <h3>Make new reservation</h3>
+                    <p>Select your port, dates and preferences to book your next berth easily.</p>
+                    <table class="table-container">
+                        <tr>
+                            <th><label for="fname" ><p>Country</p></label></th>
+                            <th><label for="Sdate" ><p>Starting date</p></label></th>
+                            <th><label for="Edate" ><p>Ending date</p></label></th>
+                            <th rowspan="2"><a href="register.html" class="rounded-button">Register</a></th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="fname" name="fname " placeholder="United Kingdom"></td>
+                            <td><input type="date" id="Sdate" name="lname"></td>
+                            <td><input type="date" id="Edate" name="lname"></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+
+            <!-- Berth Rental History Section -->
+            <section class="ports-section">
+                <h2>Berth reservation history</h2>
+                <p>Review all of your past bookings and see the details of your previous stays at various<br> ports. If you liked any of your previously reserved ports, you can book them again!</p>
+                <div class="table-container">
+                    <table class="custom-table">
+                        <tr>
+                            <th>
+                                <p class="nameport">Port of Felixstowe<br><strong>United Kingdom</strong></p>
+                            </th>
+                            <td class="berth-info">
+                                Small Berth 01 – North Dock A<br>
+                                <span>Max width: 5m | Max length: 8m | Draft: 2m</span>
+                            </td>
+                            <td class="earned">
+                                <span class="amount">€199</span>
+                                <span class="per-day">€59 /day</span>
+                            </td>
+                            <th>
+                                <a href="register.html" class="rounded-button">+</a>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button>&lt;</button>
+                    <span>1</span>
+                    <button>&gt;</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+</div>
+</body>
+</html>

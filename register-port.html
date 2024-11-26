@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/fetchHeaderFooter.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <div class="container-register">
+            <h1>Register a New Port or Berth</h1>
+            <p class="description">
+                Add a new port or berth to your list and make it available for reservations.
+                Please provide accurate details to ensure a seamless registration process.
+            </p>
+            <form class="register-form">
+                <div class="form-row">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="Enter country" required>
+                </div>
+                <div class="form-row">
+                    <label for="port-name">Port Name</label>
+                    <input type="text" id="port-name" name="port-name" placeholder="Enter port name" required>
+                </div>
+                <div class="form-row">
+                    <label for="max-width">Max Width (m)</label>
+                    <input type="number" id="max-width" name="max-width" placeholder="e.g., 5" required>
+                </div>
+                <div class="form-row">
+                    <label for="max-length">Max Length (m)</label>
+                    <input type="number" id="max-length" name="max-length" placeholder="e.g., 10" required>
+                </div>
+                <div class="form-row">
+                    <label for="draft">Draft (m)</label>
+                    <input type="number" id="draft" name="draft" placeholder="e.g., 2" required>
+                </div>
+                <div class="form-row">
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Enter any additional details"></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="submit-button">Register</button>
+                </div>
+            </form>
+        </div>
+        <div id="footer-placeholder"></div>
+    </div>
+</body>
+</html>

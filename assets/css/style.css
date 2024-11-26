@@ -458,6 +458,10 @@ footer ul li a {
     width: 100%;
     max-width: 400px;
     margin: auto; /* Středové zarovnání při vertikálním scrollu */
+    color: #5A4DBB;
+}
+.form-container h1 {
+    color: #5A4DBB;
 }
 
 /* Zarovnání formuláře doprostřed stránky */
@@ -519,7 +523,7 @@ form a {
 form a:hover {
     text-decoration: underline;
 }
-
+/*hover tlacitka*/
 /* Styl pro zaoblené tlačítko */
 .rounded-button {
     display: inline-block;
@@ -539,4 +543,509 @@ form a:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Zvýšený stín při hover */
     transform: translateY(-2px); /* Mírný pohyb nahoru */
 }
+/*owner/customer dashboard*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9fb;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+}
 
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Welcome Section */
+.welcome-section {
+    margin-top: 10.5rem;
+    margin-bottom: 10rem;
+}
+
+.welcome-table {
+    width: 100%;
+}
+
+.welcome-text h1 {
+    font-size: 26px;
+    color: #5A4DBB;
+    text-align: left;
+
+}
+/* Styl pro omezení šířky buňky */
+.welcome-text {
+    max-width: 130px; /* Maximální šířka buňky */
+    padding: 10px; /* Přidání vnitřního odsazení */
+    text-align: left; /* Zarovnání textu doleva */
+    word-wrap: break-word; /* Zalamování textu na nových řádcích */
+    line-height: 1.5; /* Zlepšení čitelnosti textu */
+}
+
+.welcome-text p {
+    color: #6c6c6c;
+    line-height: 1.6;
+    text-align: left;
+}
+.welcome-image{
+    text-align: right;
+}
+.welcome-image img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+.ports-section{
+    margin-bottom: 1rem;
+}
+/* Ports Section */
+.ports-section h2 {
+    color: #5A4DBB;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+.ports-section h3 {
+    color: #5A4DBB;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.ports-section p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.port-card {
+    background-color: #f4f4ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.port-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Berths */
+.berth {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Register Section */
+.register-port form {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+input, .register-button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* History Section */
+.history-item {
+    padding: 15px;
+    background-color: #f4f4ff;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+/* Kontejner tabulky */
+.table-container {
+    width: 100%;
+    background: #f7f7fc;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: #bbbbbb solid 1px;
+    margin-bottom: 3rem;
+}
+
+/* Základní styl tabulky */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.custom-table td {
+    padding: 15px;
+    vertical-align: middle;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+.image-cell{
+    background: #e3e0fe;
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+}
+/* Obrázek vlevo */
+.image-cell img {
+    width: 340px;
+    height: auto;
+    border-radius: 8px;
+    margin: auto;
+}
+
+/* Portní informace */
+.port-info {
+    font-size: 16px;
+    font-weight: 600;
+    color: #4f4dbd;
+}
+
+/* Informace o berth */
+.berth-info {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.berth-info span {
+    font-size: 12px;
+    color: #6e6b7b;
+}
+.berth-date strong {
+    color: #4f4dbd;
+    font-size: 14px;
+}
+
+/* Stav buňky */
+.status {
+    text-align: right;
+    font-weight: bold;
+    background: #fff;
+    width: 50px;
+}
+
+.status.reserved {
+    color: #e63946;
+}
+.status.reserved span {
+    color: black;
+}
+.status.available span {
+    color: black;
+}
+
+.status.available {
+    color: #2a9d8f;
+}
+
+/* Tlačítko "Edit" */
+.edit-button {
+    background: #4f4dbd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute; /* Přidání absolutního zarovnání */
+    top: 10px; /* Vzdálenost od horního okraje buňky */
+    right: 10px; /* Vzdálenost od pravého okraje buňky */
+    width: 70px;
+    text-align: center;
+}
+.edit-cell {
+    position: relative; /* Pro správné zarovnání tlačítka */
+    width: 60px; /* Nastavte požadovanou šířku */
+    text-align: right; /* Zajistí, že tlačítko zůstane zarovnáno doprava */
+    padding: 0; /* Volitelně odstraní nadbytečné mezery */
+}
+
+
+.edit-button:hover {
+    background: #6c63ff;
+}
+
+
+.table-container input {
+    width: 90%;
+    border-radius: 12px;
+}
+.table-container label {
+    color: #5A4DBB;
+    text-align: left;
+}
+.table-container th a{
+    position: relative; /* Pro použití absolutního zarovnání v rámci této buňky */
+    text-align: right; /* Zarovnání obsahu doprava */
+    vertical-align: bottom; /* Zarovnání obsahu buňky dolů */
+
+}
+.nameport{
+    color: #5A4DBB;
+}
+.nameport strong{
+    color: #5A4DBB;
+    font-size: 12px;
+}
+.earned {
+    font-family: 'Arial', sans-serif; /* Písmo, které odpovídá vzhledu */
+    font-size: 16px; /* Základní velikost textu */
+    color: #6C63FF; /* Barva textu */
+    display: flex; /* Pro správné umístění částí vedle sebe */
+    align-items: baseline; /* Zarovnání na úroveň textu */
+    gap: 8px; /* Vzdálenost mezi prvky */
+    justify-content: right;
+}
+
+.earned .amount {
+    font-weight: bold; /* Tučné písmo pro hodnotu */
+    font-size: 24px; /* Větší velikost textu pro zvýraznění hodnoty */
+}
+
+.earned .per-day {
+    font-size: 14px; /* Menší velikost textu pro vedlejší informaci */
+    color: #999; /* Světlejší barva pro méně důležitý text */
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 40px;
+    align-items: center;
+    margin: auto;
+}
+
+.pagination button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/*register a new port*/
+
+.container-register {
+    max-width: 600px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 22px;
+    margin: 150px auto;
+}
+.container-register h1{
+    color: #5A4DBB;
+}
+
+.description {
+    color: #6C6C6C;
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+
+}
+/* Form Styles */
+.register-form .form-row {
+    margin-bottom: 16px;
+}
+
+.register-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5A4DBB;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.register-form input,
+.register-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.register-form input:focus,
+.register-form textarea:focus {
+    border-color: #6C63FF;
+    box-shadow: 0 0 4px rgba(108, 99, 255, 0.4);
+}
+
+.register-form .submit-button {
+    background-color: #6C63FF;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.register-form .submit-button:hover {
+    background-color: #564FCF;
+}
+textarea {
+    max-width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+    min-width: 100%;
+}
+/*Account settings*/
+/* Container for the settings page */
+.settings-container {
+    max-width: 1100px;
+    margin: 150px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.settings-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #5a4dbb;
+    text-align: left;
+}
+
+/* Grid Layout */
+.settings-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px 40px;
+    align-items: start;
+}
+
+/* Left Side Sections */
+.settings-section {
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    justify-items: left;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    color: #5a4dbb;
+}
+
+/* Individual setting item */
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #f4f4ff;
+    border: 2px solid #e3e0fe;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for items */
+.settings-item:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Setting details */
+.settings-detail {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Labels and values */
+.settings-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+    min-width: 500px;
+    text-align: left;
+}
+
+.settings-value {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    text-align: left;
+}
+
+/* Buttons */
+.settings-button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+}
+
+.settings-button:hover {
+    background-color: #5947d4;
+}
+
+/* Right Side Descriptions */
+.description {
+    align-self: start;
+}
+
+/* Description Headings */
+.description h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5A4DBB;
+    margin-bottom: 8px;
+}
+
+/* Description Paragraphs */
+.description p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .settings-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .settings-section {
+        padding-right: 0;
+        border-right: none;
+    }
+}
+/*
+table, th, td {
+    border:1px solid black;
+}
