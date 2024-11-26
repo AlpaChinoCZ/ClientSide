@@ -148,6 +148,10 @@ main {
     justify-content: center;
 }
 
+.align{
+    align-items: center;
+}
+
 /* HEADER */
 .header {
     background: var(--color-placeholder);
@@ -226,11 +230,12 @@ nav ul li a:hover {
     margin-bottom: var(--section-offset);
 }
 
-.new-section:nth-child(odd){
+
+.with-decoration .new-section:nth-child(odd){
     background-color: var(--section-light);;
 }
     
-.new-section:nth-child(even){
+.with-decoration .new-section:nth-child(even){
     background-color: var(--section-dark);
 }
 
@@ -488,9 +493,80 @@ footer ul li a {
     border-radius: 10px;
 }
 
-.test{
-    display: inline-block;
+
+/* PORT */
+.port__img-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap:50px;
+    row-gap: 20px;
+    grid-template-areas: 
+    "mainImg . ."
+    "mainImg . .";
 }
+
+.port_img{   
+    border-radius: 20px;
+    background-color: var(--section-dark);
+    height: 100%;
+    width: 100%;
+}
+
+.port__img--main{
+    grid-area: mainImg;
+}
+.port__img--side{
+    aspect-ratio: 1;
+}
+
+.port_available{
+    border-radius: 100vh;
+    padding: 5px;
+    width: auto;
+    aspect-ratio: 1;
+    background-color: var(--button-color);
+    color:white;
+}
+
+.checked {
+    color: orange;
+}
+
+.port__date{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-auto-rows: 1fr;
+    gap:50px;
+}
+
+.port__dropdown{
+    border-radius: 100vh;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.port__price{
+    aspect-ratio: 1;
+    background-color: var(--section-dark);
+    border-radius: 20px; 
+    padding: 20px;   
+    text-align: center;
+}
+
+.port__button{
+    width: auto;   
+}
+
+.port__amanities{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    row-gap: 20px;
+}
+
 
 /* CHECKBOX */
 .checkbox-wrapper .control {

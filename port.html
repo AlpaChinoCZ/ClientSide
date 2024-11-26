@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BerthRent</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    </head>
+    <body>
+        <div class="container">            
+            <header class="header">
+                <nav class="content-max-width">
+                    <div class="logo">
+                        <img src="./Images/logoipsum.svg" alt="logo" />
+                        <h1>LOGO</h1>
+                    </div>
+                    <ul>
+                        <li class="can-disable">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="can-disable">
+                            <a href="#">Ports</a>
+                        </li>
+                        <li class="can-disable">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="can-disable">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="search-container">                            
+                            <form action="/search" method="get">                                
+                                <label class="search-button" id="search-btn" for="searchright">
+                                    <span class="mglass">&#9906;</span>
+                                </label>
+                            </form>
+                            <div class="search-expand" id ="expand">
+                                <div class="search-close" id="search-close-btn">
+                                    <p>Close></p>
+                                </div>
+                                <input class="search-bar" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li>
+                            <a class="button-basic" href="#">Get Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main>
+                <section class="new-section--first content-max-width">
+                    <div class="content-padding">
+                        <div class="flex-row">
+                            <h1>Port of Felixstowe</h1>
+                            <div class="flex-row flex-start">
+                                <p>Port rating&nbsp;</p>                                
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <div class="port__img-container">
+                            <div class="port_img port__img--main">
+                                <img>
+                            </div>
+                            <div class="port_img port__img--side">
+                                <img>
+                            </div>
+                            <div class="port_img port__img--side">
+                                <img>
+                            </div>
+                            <div class="port_img port__img--side">
+                                <img>
+                            </div>
+                            <div class="port_img port__img--side">
+                                <img>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="new-section content-max-width">
+                    <div class="content-padding">
+                        <!-- Date info -->  
+                        <div class="port__date">
+                            <div class="flex-column flex-1">
+                                <label for="start_date">Starting date</label>
+                                <input class="reserve__input non-clicable" type="date" id="start_date" name="start_date" required>
+                            </div>   
+                            <div class="flex-column flex-1">
+                                <label for="end_date">Ending date</label>
+                                <input class="reserve__input non-clicable" type="date" id="end_date" name="end_date" required>
+                            </div>   
+                            <div class="flex-column flex-1">
+                                <label for="spot">Select Category:</label>
+                                <select id="spot" class="port__dropdown">
+                                    <option value="select">Select</option>
+                                    <option value="spot1">Spot 1</option>
+                                    <option value="spot2">Spot 2</option>
+                                    <option value="spot3">Spot 3</option>
+                                </select>
+                            </div>                            
+                        </div>
+                        <!-- Other Informations -->  
+                        <div class="flex-row gap-40">
+                            <div class="flex-2">
+                                <h2>Information about the port</h2>
+                                <p>Port of Felixstowe is a prestigious marina in United Kingdoms, renowned for its exclusive berths, stunning coastal views, and luxurious atmosphere. It attracts high-end yachts and offers premium services in the heart of the picturesque Felixstowe village.</p>
+                                <h3>Available port amenities</h3>
+                                <div class="port__amanities">
+                                    <div class="flex-row flex-left align">
+                                        <span class="fa fa-check port_available"></span>
+                                        <p>Security</p>
+                                    </div>
+                                    <div class="flex-row flex-left align">
+                                        <span class="fa fa-check port_available"></span>
+                                        <p>Accommodation</p>
+                                    </div>
+                                    <div class="flex-row flex-left align">
+                                        <span class="fa fa-check port_available"></span>
+                                        <p>Restaurant</p>
+                                    </div>
+                                    <div class="flex-row flex-left align">
+                                        <span class="fa fa-check port_available"></span>
+                                        <p>Fuel</p>
+                                    </div>
+                                    <div class="flex-row flex-left align">
+                                        <span class="fa fa-check port_available"></span>
+                                        <p>Wi-Fi</p>
+                                    </div>
+                                    <div class="flex-row flex-left align">
+                                        <span class="fa fa-check port_available"></span>
+                                        <p>Electricity</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Contact infomration</h2>
+                                    <div class="flex-row">
+                                        <div class=" flex-row">
+                                            <span class="fa fa-user"></span>
+                                            <p>username</p>
+                                        </div>
+                                        <div class="flex-row">
+                                            <span class="fa fa-envelope"></span>
+                                            <p>contact-email@company.com</p>
+                                        </div>
+                                        <div class="flex-row">
+                                            <span class="fa fa-phone"></span>
+                                            <p>(123) 456 - 789 - 869</p>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="flex-right flex-1">
+                                <div class="port__price flex-column">
+                                    <div class="flex-row flex-center align">
+                                        <span class="fa fa-check port_available"></span>
+                                        <p>Selected spot is available</p>
+                                    </div>
+                                    <div>
+                                        <p>Total price</p>
+                                        <p>$199</p>
+                                        <p>$59 / day</p>
+                                    </div>
+                                    <div>
+                                        <a class="button-basic port__button">Reserve</a>
+                                    </div>
+                                    
+                                </div>  
+                            </div>
+                        </div>  
+                        <div>
+                            <h2>Location</h2>
+                            <div class="flex-row flex-left">
+                                <span class="fa fa-map-marker"></span>
+                                <p>Tomline House The Dock, Felixtone IP11 3SY, UK</p>
+                            </div>
+                            <div id="googleMap" style="width:100%;height:400px;"></div>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+            
+            <footer>
+                <div class="socials content-max-width">
+                    <div class="socials__part">
+                        <div class="logo__footer">
+                            <img src="./Images/logoipsum.svg" alt="logo" />
+                            <h1>LOGO</h1>
+                        </div>
+                    </div>
+                    <div class="socials__part socials__part--middle">
+                        <ul>
+                            <li id="can-disable">
+                                <a href="#">Home</a>
+                            </li>
+                            <li id="can-disable">
+                                <a href="#">Ports</a>
+                            </li>
+                            <li id="can-disable">
+                                <a href="#">About</a>
+                            </li>
+                            <li id="can-disable">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socials__part socials__part--right">
+                        
+                    </div>
+                </div>
+                <hr class="rounded content-max-width">
+                <aside class="aside_footer content-max-width">
+                    <p>ČZU ©2024</p>
+                    <p>Stránka byla vytvořena jako studentský projekt.</p>
+                </aside>
+            </footer>
+
+            <script src="./script.js"></script>            
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>            
+        </div>        
+    </body>
+</html>
