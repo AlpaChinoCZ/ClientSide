@@ -4,55 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/fetchHeaderFooter.js"></script>
 </head>
 <body>
     <div class="container">
-        <!-- Header bude načten dynamicky -->
         <div id="header-placeholder"></div>
-        <main>
-            <div class="login-page">
-                <div class="form-container">
-                    <h1>Přihlášení</h1>
-                    <form action="/login" method="post">
-                        <label for="username">Uživatelské jméno</label>
-                        <input type="text" id="username" name="username" placeholder="Zadejte uživatelské jméno" required>
+        <div class="login-page">
+            <div class="form-container">
+                <h1>Login</h1>
+                <form action="/login" method="post">
+                    <label for="username">Email address</label>
+                    <input type="text" id="username" name="username" placeholder="Enter email" required>
 
-                        <label for="password">Heslo</label>
-                        <input type="password" id="password" name="password" placeholder="Zadejte heslo" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
 
-                        <button type="submit">Přihlásit se</button>
-                    </form>
-                    <p>Nemáte účet? <a href="/register">Zaregistrujte se</a></p>
-                </div>
+                    <button type="submit">Login</button>
+                </form>
+                <br>
+                <p>Don't have an account? <a href="register.html" class="rounded-button">Create an account</a></p>
             </div>
-        </main>
-        <!-- Footer bude načten dynamicky -->
+        </div>
         <div id="footer-placeholder"></div>
-        <script src="script.js"></script>
-        <script>
-            // Načtení headeru
-            fetch('header.html')
-                .then(response => {
-                    if (!response.ok) throw new Error("Failed to fetch header.");
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('header-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading header:', error));
-
-            // Načtení footeru
-            fetch('footer.html')
-                .then(response => {
-                    if (!response.ok) throw new Error("Failed to fetch footer.");
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('footer-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-        </script>
     </div>
 </body>
 </html>

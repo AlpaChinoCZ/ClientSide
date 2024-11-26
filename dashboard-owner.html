@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berth Rental Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/fetchHeaderFooter.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+
+    <main>
+    <div class="dashboard-container"><
+        <section class="welcome-section">
+            <table class="welcome-table">
+                <tr>
+                    <td class="welcome-text">
+                        <h1>Welcome to your berth rental dashboard!</h1>
+                        <p>
+                            Here you can easily view your current reservations, including the details of your rented berths,
+                            as well as your past bookings. Stay up to date with all your rentals and manage future bookings with just a few clicks.
+                        </p>
+                    </td>
+                    <td class="welcome-image">
+                        <img src="/assets/img/logoipsum.svg" alt="Dashboard illustration">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Owned Ports and Berths Section -->
+        <section class="ports-section">
+            <h2>Owned ports and berths</h2>
+            <p>View and manage all your ports and berths, including availability and details for each.</p>
+
+            <div class="port-card">
+                <div class="port-header">
+                    <span class="country">United Kingdom</span>
+                    <h3>Port of Felixstowe</h3>
+                    <button class="edit-button">Edit</button>
+                </div>
+                <div class="berths">
+                    <div class="berth">
+                        <p><strong>Small Berth 01 – North Dock A</strong></p>
+                        <p>Max width: 5m | Max length: 8m | Draft: 2m</p>
+                        <span class="occupancy reserved">Occupancy: RESERVED</span>
+                    </div>
+                    <div class="berth">
+                        <p><strong>Small Berth 02 – North Dock A</strong></p>
+                        <p>Max width: 5m | Max length: 8m | Draft: 2m</p>
+                        <span class="occupancy available">Occupancy: AVAILABLE</span>
+                    </div>
+                    <div class="berth">
+                        <p><strong>Small Berth 03 – North Dock A</strong></p>
+                        <p>Max width: 5m | Max length: 8m | Draft: 2m</p>
+                        <span class="occupancy available">Occupancy: AVAILABLE</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Register a New Port Section -->
+            <div class="register-port">
+                <h3>Register a new port or berth</h3>
+                <p>Add a new port or berth to your list and make it available for reservations easily.</p>
+                <form>
+                    <input type="text" placeholder="Country" required>
+                    <input type="text" placeholder="Port name" required>
+                    <button type="submit" class="register-button">Register</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Berth Rental History Section -->
+        <section class="history-section">
+            <h2>Berth rental history</h2>
+            <p>Keep track of all your past rentals and monitor the performance of your berths. Review reservation details, rental durations to optimize your offerings.</p>
+            <div class="history-item">
+                <p><strong>Port of Felixstowe</strong></p>
+                <p>Small Berth 01 – North Dock A</p>
+                <p>09/08/2024 - 08/06/2024</p>
+                <p><strong>Earned:</strong> €199 (€59/day)</p>
+            </div>
+            <!-- Pagination -->
+            <div class="pagination">
+                <button>&lt;</button>
+                <span>1</span>
+                <button>&gt;</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+        <div id="footer-placeholder"></div>
+    </div>
+
+
+</body>
+</html>

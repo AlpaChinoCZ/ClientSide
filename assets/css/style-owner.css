@@ -1,0 +1,101 @@
+/* Obecné styly */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9fb;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin-top: 10px;
+}
+
+/* Welcome Section */
+.welcome-section {
+
+}
+
+.welcome-table {
+    width: 55%;
+}
+
+.welcome-text h1 {
+    font-size: 26px;
+    color: #5A4DBB;
+
+}
+
+.welcome-text p {
+    color: #6c6c6c;
+    line-height: 1.6;
+}
+
+.welcome-image img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+/* Ports Section */
+.ports-section h2 {
+    color: #5A4DBB;
+    font-size: 22px;
+}
+
+.port-card {
+    background-color: #f4f4ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.port-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Berths */
+.berth {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Register Section */
+.register-port form {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+input, .register-button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* History Section */
+.history-item {
+    padding: 15px;
+    background-color: #f4f4ff;
+    border-radius: 8px;
+    margin-top: 15px;
+}
