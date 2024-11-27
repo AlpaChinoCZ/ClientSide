@@ -1,5 +1,4 @@
 function onSearchClick(){
-    console.log("ahoj11");
     var element = document.getElementById('expand');
     var   style = window.getComputedStyle(element);
     var  top = style.getPropertyValue('display');
@@ -13,13 +12,18 @@ function onSearchClick(){
     }
 }
 
-function onSearchClose(){
-    console.log("ahoj22");
-    document.getElementById('expand').classList.toggle('expanded')
-    var elements = document.getElementsByClassName("can-disable")
-    for(var i = 0; i < elements.length; i++) {
-        elements[i].classList.toggle('disable-nav')
+function onSearchClose(){    
+    var element = document.getElementById('expand');
+    var   style = window.getComputedStyle(element);
+    var  top = style.getPropertyValue('display');
+    if (top !== "none"){
+        document.getElementById('expand').classList.toggle('expanded')
+        var elements = document.getElementsByClassName("can-disable")
+        for(var i = 0; i < elements.length; i++) {
+            elements[i].classList.toggle('disable-nav')
+        }
     }
+    
 }
 
 /** GOOGLE MAP */
@@ -74,3 +78,15 @@ function toggleSearch() {
     const searchBar = document.getElementById("search-bar");
     searchBar.classList.toggle("active");
 }
+
+
+
+/* collapse mobile nav menu if open*/
+window.addEventListener('resize', (size) => {
+    if (document.documentElement.clientWidth >= 920){
+        document.getElementById("check").checked = false;
+    } 
+    if (document.documentElement.clientWidth < 920){
+        onSearchClose()
+    }     
+});

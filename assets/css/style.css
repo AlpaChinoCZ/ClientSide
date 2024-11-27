@@ -52,7 +52,6 @@ main {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .content-padding {
@@ -284,6 +283,9 @@ main {
     text-decoration: none;
     color: white;
     fill: white;
+    left:0;
+    margin: 0;
+    z-index: 3000;
 }
 
 .header .logo {
@@ -316,11 +318,47 @@ nav {
     padding-right: 50px;
 }
 
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    order: 1;
+    margin-right: 20px;
+    z-index: 3000;
+  }
 
-nav ul {
+#check {
+    display:none;
+}
+
+#check:checked ~ ul {
+    right: 0;
+}
+
+#check:checked ~ .checkbtn {
+    position: fixed;
+    right: 50px;
+}
+
+#check:checked ~ .logo {
+    position: fixed;
+    left: 50px;
+}
+
+nav ul {    
     list-style: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--color-dark);
+    width: 100%;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+    gap:20px;
+    font-size: 1.5em;
 }
 
 nav ul li {
@@ -553,6 +591,29 @@ footer ul li a {
     width: 100%;
     padding-left: 20px;
     outline: none;
+}
+
+.mobile{
+    height: 50px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.search-bar-mobile{
+    height: 50px;
+    width: 400px;
+    border-radius: 100vh 0px 0px 100vh;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-left: 20px;
+}
+.button-basic--mobile{   
+    height: auto;
+    width: 150px;;
+    border-radius: 0 100vh 100vh 0;
+    border: none;
 }
 
 /* HOMEPAGE */
@@ -1049,7 +1110,31 @@ footer ul li a {
     }
 }
 
-@media (min-width: 920px){   
+@media (min-width: 920px){ 
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+
+    nav ul{
+        flex-direction: row;
+        justify-content: flex-start;
+        position: static;
+        top: auto;
+        right: auto;
+        background-color: transparent;
+        width: auto;
+        height: auto;
+        align-items: center;
+        transition: all 0s ease 0s;
+        gap:normal normal;
+        font-size: 1em;      
+    }
+    .mobile{
+        display: none;
+    }
     .search-container{
         display: block;
     } 
