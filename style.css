@@ -587,8 +587,7 @@ footer ul li a {
 
 .port__img{
     position: relative;
-    max-height: 200px;
-    height:200px;
+    height: 200px;
 }
 
 .port__img img{   
@@ -599,6 +598,7 @@ footer ul li a {
     display:block;
     border-radius: 10px;
 }
+
 .port__rating {
     position: absolute;
     top: 10px;
@@ -606,10 +606,11 @@ footer ul li a {
     background-color: var(--color-white);
     padding: 5px;
     border-radius: 5px;
-  }
-  .port__rating p{
+}
+
+.port__rating p{
     padding-left:10px;
-  }
+}
 
 .port__block {
     padding: 15px;
@@ -641,41 +642,51 @@ footer ul li a {
 }
 
 /* SEARCH */
-.search__filter {
-    width: 250px;
+.search{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.search__filter{
+
+}
+
+.checkbox-container{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    gap: 30px;
+}
+
+.search__filter-block {
+    /*width: 250px;*/
     background-color:  var(--section-dark);
     border-radius: 20px;
     padding: 20px;
 }
 
 .serach__container{
-    padding-left: 50px;
+    padding-left: 0;
+    margin-top: 50px;
 }
 
 .serach__dropdown {
     width: 100px;
-    height: 30px;
+    height: 25px;
     padding-left: 10px;
     font-size: 16px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    cursor: pointer;
 }
 
 .serach__results{
     display: grid;    
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
+    row-gap: 20px;
 }
 
-.serach__results div{
-    background-color: var(--section-dark);
-}
-
-.serach__results img{
-    height: 100px;
-    width: 100%;
-    border-radius: 10px;
-}
 
 
 /* PORT */
@@ -769,12 +780,21 @@ footer ul li a {
 }
 
 /* ABOUT */
+.about__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+}
+
+
 .about__img{
     width: 100%;
     aspect-ratio: 1;
     background-color: #000;
     border-radius: 20px;
 }
+
 
 
 
@@ -931,6 +951,9 @@ footer ul li a {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .about__container{
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 920px){    
@@ -946,4 +969,26 @@ footer ul li a {
         flex-direction: row;
         height: 150px;
     }
+    
+    .serach__results{ 
+        grid-template-columns: 1fr 1fr;
+    }
+    .search{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    .search__filter-block {
+        width: 250px;
+    }
+    .checkbox-container{
+        display: grid;
+        grid-template-columns: auto;       
+
+    }    
+    .serach__container{
+        padding-left: 50px;
+        margin-top: 0;
+    }
+    
 }
