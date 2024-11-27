@@ -13,19 +13,19 @@
         <div class="container">            
             <header class="header">
                 <nav class="content-max-width">
-                    <div class="logo">
-                        <img src="./Images/logoipsum.svg" alt="logo" />
-                        <h1>LOGO</h1>
-                    </div>
+                    <a class="logo" href="./main.html">
+                        <div class="logo-img" ></div>
+                        <p>LOGO</p>
+                    </a>
                     <ul>
                         <li class="can-disable">
-                            <a href="#">Home</a>
+                            <a href="./main.html">Home</a>
                         </li>
                         <li class="can-disable">
-                            <a href="#">Ports</a>
+                            <a href="./search.html">Ports</a>
                         </li>
                         <li class="can-disable">
-                            <a href="#">About</a>
+                            <a href="./about.html">About</a>
                         </li>
                         <li class="can-disable">
                             <a href="#">Contact</a>
@@ -55,7 +55,7 @@
                     <div class="content-padding flex-column flex-start">
                         <h1>Reservation process</h1>
                         <div class="pay__container mgt-20">
-                            <div class="flex-1">
+                            <form class="flex-1">
                                 <div class="reservation flex-column gap-row-20">
                                     <div class="flex-row gap-40">
                                         <div class="flex-1">
@@ -90,11 +90,11 @@
                                         <p class="reservation__field mgt-10">Name of the spot (length / width / draft)</p>
                                     </div>
                                     <div class="flex-row gap-20">
-                                        <a class="button-basic">Proceed to payement</a>
-                                        <a class="button-basic">Cancel reservation</a>
+                                        <button type="submit" class="button-basic button-basic--button">Proceed to payement</button>
+                                        <button type="button" class="button-basic button-basic--button">Cancel reservation</button>
                                     </div>
                                 </div>     
-                            </div>                                                   
+                            </form>                                                   
                             <div class="flex-1">
                                 <div class="flex-column">
                                     <h2>RESERVING A SPOT FROM</h2>
@@ -115,23 +115,23 @@
             <footer>
                 <div class="socials content-max-width">
                     <div class="socials__part">
-                        <div class="logo__footer">
-                            <img src="./Images/logoipsum.svg" alt="logo" />
+                        <a class="logo__footer" href="./main.html">
+                            <div class="logo-img" ></div>
                             <h1>LOGO</h1>
-                        </div>
+                        </a>
                     </div>
                     <div class="socials__part socials__part--middle">
                         <ul>
-                            <li id="can-disable">
-                                <a href="#">Home</a>
+                            <li>
+                                <a href="./main.html">Home</a>
                             </li>
-                            <li id="can-disable">
-                                <a href="#">Ports</a>
+                            <li>
+                                <a href="./search.html">Ports</a>
                             </li>
-                            <li id="can-disable">
-                                <a href="#">About</a>
+                            <li>
+                                <a href="./about.html">About</a>
                             </li>
-                            <li id="can-disable">
+                            <li>
                                 <a href="#">Contact</a>
                             </li>
                         </ul>
