@@ -795,8 +795,13 @@ footer ul li a {
     border-radius: 20px;
 }
 
-
-
+/* PAYMENT*/
+.pay__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+}
 
 /* CHECKBOX */
 .checkbox-wrapper .control {
@@ -953,6 +958,10 @@ footer ul li a {
     }
     .about__container{
         flex-direction: row;
+    }
+    .pay__container{
+        flex-direction: row;
+        
     }
 }
 
