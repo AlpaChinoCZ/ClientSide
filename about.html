@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="container">            
-            <header class="header header--transp">
+            <header class="header">
                 <nav class="content-max-width">
                     <a class="logo" href="./main.html">
                         <div class="logo-img" ></div>
@@ -50,52 +50,27 @@
                 </nav>
             </header>
     
-            <main>
-                <section class="new-section new-section--teaser">
-                    <div class = "teaser__image">
-                        <picture>
-                            <source srcset="./Images/teaser-boat.jpg">
-                            <img src="./Images/teaser-boat.jpg" alt="Úvodní obrázek">
-                        </picture>
-                        <!-- TEASER CONTENT -->
-                         <div class = "teaser__container">
-                            <div class="content-max-width">
-                                <div class="content-padding">
-                                    <div class="flex-row">  
-                                        <div class="reserve__select-conainer">
-                                            <form class="flex-column gap-30 reserve__form">
-                                                <div class="reserve__text">
-                                                    <h1>Reserve your spot in one of our partner's beautiful sea port</h1>
-                                                    <p class="pdt-20">Easily find and book the perfect berth for your journey. Start exploring today by choosing the desired location date!</p>   
-                                                </div>
-                                                <div class="flex-column">
-                                                    <label for="country">Country</label>
-                                                    <input class="reserve__input mgt-10" id="country" placeholder="Type a country" required>                                                    
-                                                </div>
-                                                <div>
-                                                    <div class="flex-row gap-20">
-                                                        <div class="flex-column flex-1">
-                                                            <label for="start_date">Starting date</label>
-                                                            <input class="reserve__input mgt-10" type="date" id="start_date" name="start_date"  required>
-                                                        </div>
-                                                        <div class="flex-column flex-1">
-                                                            <label for="end_date">Ending date</label>
-                                                            <input class="reserve__input mgt-10" type="date" id="end_date" name="end_date" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-row flex-right">
-                                                    <button class="button-basic button-basic--button" type="submit" value="Submit">Explore available ports</button>
-                                                </div>
-                                            </form>                                           
-                                        </div>
-                                    </div>
+            <main class="with-decoration">
+                <section class="new-section--first content-max-width">
+                    <div class="content-padding">
+                        <div class="about__container">
+                            <div class="flex-1">
+                                <div class="flex-column flex-start">
+                                    <h1>Bringing Boating Closer to Everyone</h1>
+                                    <p class="mgt-20">Our goal is to make access to beautiful ports around the world easier and more accessible for everyone. Whether you're a first-time traveler or an experienced sailor, we believe everyone should have the opportunity to find the perfect port for their journey. Our platform lets you book a spot at any of our partner's ports with just a few clicks.</p>
+                                    <p class="mgt-10">Since starting this project, we've been expanding our network of ports, continuously offering more options to meet your needs. We're focused on providing a seamless booking experience so you can find and reserve the ideal location for your boat quickly and easily.</p>
+                                    <p class="mgt-10">We're committed to the highest standards of safety while promoting environmental responsibility. Our goal is to ensure sustainable port access for everyone, allowing more people to enjoy the beauty of the sea while protecting it for future generations.</p>
+                                </div>                                
+                            </div>
+                            <div class="flex-1">
+                                <div class="about__img">
+
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
+                        
                     </div>
                 </section>
-
                 <section class="new-section">
                     <div class="content-max-width">
                         <div class="content-padding flex-column flex-start">
@@ -128,47 +103,13 @@
                     </div>
                 </section>
 
-                <section class="new-section content-max-width">
-                    <div class="content-padding flex-column">
-                        <h2>Popular ports and destinations!</h2>
-                        <p>Explore the most popular ports and destinations based on our user's bookings. These locations offer prime berths and easy access to stunning waterways.</p>
-                        <div class="content-padding port__container">
-                            <div class="port__block flex-column">
-                                <div class="port__img">
-                                    <img src="./Images/MarineBerth.avif">
-                                    <div class="port__rating flex-row">
-                                        <span class="fa fa-star"></span>
-                                        <p>4.0</p>
-                                    </div>
-                                </div>
-                                <h3 class="mgt-10">Port of Felixtowe</h3>
-                                <p class="mgt-10">United Kingdoms</p>
-                                <div class="mgt-10 port__info">
-                                    <p>Bert size: Various</p>
-                                </div>
-                                <div class="flex-row">
-                                    <div>
-                                        <p>Price: 51$ / day</p>
-                                    </div>
-                                    <div>
-                                        <a class="flex-right" href="#">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="port__button content-padding">
-                            <a class="button-basic" href="#">View all available ports</a>
-                        </div>                     
-                    </div>  
-                </section>
-
                 <section class="new-section">
                     <div class="content-max-width">
                         <div class="content-padding">
                             <div class="flex-row">
                                 <div class="flex-3">
                                     <h2>Frequently Asked Questions</h2>
-                                    <p class="mgt-20 mgb-10">We know that choosing the right docking space for your boat is an important decision, and you may have some questions. Below, we've answered the most common inquiries to help guide you through the process. If you need further assistance, don't hesitate to reach out.</p>
+                                    <p>We know that choosing the right docking space for your boat is an important decision, and you may have some questions. Below, we've answered the most common inquiries to help guide you through the process. If you need further assistance, don't hesitate to reach out.</p>
                                 </div> 
                                 <div class="flex-1"></div>
                             </div>
@@ -262,6 +203,7 @@
             </footer>
 
             <script src="./script.js"></script>            
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>            
         </div>        
     </body>
 </html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BerthRent</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    </head>
+    <body>
+        <div class="container">            
+            <header class="header">
+                <nav class="content-max-width">
+                    <a class="logo" href="./main.html">
+                        <div class="logo-img" ></div>
+                        <p>LOGO</p>
+                    </a>
+                    <ul>
+                        <li class="can-disable">
+                            <a href="./main.html">Home</a>
+                        </li>
+                        <li class="can-disable">
+                            <a href="./search.html">Ports</a>
+                        </li>
+                        <li class="can-disable">
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li class="can-disable">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="search-container">                            
+                            <form action="/search" method="get">                                
+                                <label class="search-button" id="search-btn" for="searchright">
+                                    <span class="mglass">&#9906;</span>
+                                </label>
+                            </form>
+                            <div class="search-expand" id ="expand">
+                                <div class="search-close" id="search-close-btn">
+                                    <p class="pdl-10">Close></p>
+                                </div>
+                                <input class="search-bar" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li>
+                            <a class="button-basic" href="#">Get Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <main>
+                <section class="new-section--first content-max-width">
+                    <div class="content-padding flex-column flex-start">
+                        <h1>Reservation process</h1>
+                        <div class="pay__container mgt-20">
+                            <form class="flex-1">
+                                <div class="reservation flex-column gap-row-20">
+                                    <div class="flex-row gap-40">
+                                        <div class="flex-1">
+                                            <div class="flex-column">
+                                                <p>Country</p>
+                                                <p class="reservation__field  mgt-10">United Kingdoms</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="flex-column">
+                                                <p>Port name</p>
+                                                <p class="reservation__field mgt-10">Port of Felixstowe</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row gap-40">
+                                        <div class="flex-1">
+                                            <div class="flex-column">
+                                                <label for="end_date">Starting date</label>
+                                                <input class="reserve__input non-clicable mgt-10" type="date" id="end_date" name="end_date">
+                                            </div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="flex-column">
+                                                <label for="end_date">Ending date</label>
+                                                <input class="reserve__input non-clicable mgt-10" type="date" id="end_date" name="end_date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-column">
+                                        <p>Selected spot</p>
+                                        <p class="reservation__field mgt-10">Name of the spot (length / width / draft)</p>
+                                    </div>
+                                    <div class="flex-row gap-20">
+                                        <button type="submit" class="button-basic button-basic--button">Proceed to payement</button>
+                                        <button type="button" class="button-basic button-basic--button">Cancel reservation</button>
+                                    </div>
+                                </div>     
+                            </form>                                                   
+                            <div class="flex-1">
+                                <div class="flex-column">
+                                    <h2>RESERVING A SPOT FROM</h2>
+                                    <p class="mgt-10">Port of Felixstowe</p>
+                                    <p class="mgt-10">Please confirm all the displayed details are correct to continue to the pyement process.</p>
+                                    <div class="reservation flex-column flex-center align mgt-10">
+                                        <p>Total price</p>
+                                        <p>$199</p>
+                                        <p>$59 / day</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            
+            <footer>
+                <div class="socials content-max-width">
+                    <div class="socials__part">
+                        <a class="logo__footer" href="./main.html">
+                            <div class="logo-img" ></div>
+                            <h1>LOGO</h1>
+                        </a>
+                    </div>
+                    <div class="socials__part socials__part--middle">
+                        <ul>
+                            <li>
+                                <a href="./main.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./search.html">Ports</a>
+                            </li>
+                            <li>
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="socials__part socials__part--right">
+                        
+                    </div>
+                </div>
+                <hr class="rounded content-max-width">
+                <aside class="aside_footer content-max-width">
+                    <p>ČZU ©2024</p>
+                    <p>Stránka byla vytvořena jako studentský projekt.</p>
+                </aside>
+            </footer>
+
+            <script src="./script.js"></script>            
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>            
+        </div>        
+    </body>
+</html>
