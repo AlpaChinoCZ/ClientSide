@@ -1,3 +1,4 @@
+/** SEARCH */
 document.getElementById('search-btn').onclick = function() {
 
     var element = document.getElementById('expand'),
@@ -21,6 +22,9 @@ document.getElementById('search-close-btn').onclick = function() {
     }
 }
 
+
+
+/** GOOGLE MAP */
 function myMap() {
     var mapProp= {
         center:new google.maps.LatLng(51.508742,-0.120850),
@@ -30,6 +34,7 @@ function myMap() {
 }
 
 
+/** FAQ */
 const toggles = document.querySelectorAll('.faq-toggle');
 
 toggles.forEach(toggle => {
