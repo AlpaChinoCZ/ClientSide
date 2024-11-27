@@ -7,48 +7,12 @@
         <title>BerthRent</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+        <script src="assets/js/fetchHeaderFooter.js"></script>
+        <script src="assets/js/script.js"></script>
     </head>
     <body>
         <div class="container">            
-            <header class="header">
-                <nav class="content-max-width">
-                    <a class="logo" href="./main.html">
-                        <div class="logo-img" ></div>
-                        <p>LOGO</p>
-                    </a>
-                    <ul>
-                        <li class="can-disable">
-                            <a href="./main.html">Home</a>
-                        </li>
-                        <li class="can-disable">
-                            <a href="./search.html">Ports</a>
-                        </li>
-                        <li class="can-disable">
-                            <a href="./about.html">About</a>
-                        </li>
-                        <li class="can-disable">
-                            <a href="#">Contact</a>
-                        </li>
-                        <li class="search-container">                            
-                            <form action="/search" method="get">                                
-                                <label class="search-button" id="search-btn" for="searchright">
-                                    <span class="mglass">&#9906;</span>
-                                </label>
-                            </form>
-                            <div class="search-expand" id ="expand">
-                                <div class="search-close" id="search-close-btn">
-                                    <p class="pdl-10">Close></p>
-                                </div>
-                                <input class="search-bar" type="text" placeholder="Search..">
-                            </div>
-                        </li>
-                        <li>
-                            <a class="button-basic" href="#">Get Started</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <div id="header-placeholder"></div>
     
             <main>
                 <section class="new-section--first content-max-width">
@@ -112,43 +76,7 @@
                 </section>
             </main>
             
-            <footer>
-                <div class="socials content-max-width">
-                    <div class="socials__part">
-                        <a class="logo__footer" href="./main.html">
-                            <div class="logo-img" ></div>
-                            <h1>LOGO</h1>
-                        </a>
-                    </div>
-                    <div class="socials__part socials__part--middle">
-                        <ul>
-                            <li>
-                                <a href="./main.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="./search.html">Ports</a>
-                            </li>
-                            <li>
-                                <a href="./about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="socials__part socials__part--right">
-                        
-                    </div>
-                </div>
-                <hr class="rounded content-max-width">
-                <aside class="aside_footer content-max-width">
-                    <p>ČZU ©2024</p>
-                    <p>Stránka byla vytvořena jako studentský projekt.</p>
-                </aside>
-            </footer>
-
-            <script src="./script.js"></script>            
-            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>            
+            <div id="footer-placeholder"></div>      
         </div>        
     </body>
 </html>
