@@ -49,22 +49,22 @@
                     </ul>
                 </nav>
             </header>
-    
+        
             <main>
                 <section class="new-section--first content-max-width">
                     <div class="content-padding">
                         <div class="flex-row">
                             <h1>Port of Felixstowe</h1>
                             <div class="flex-row flex-start">
-                                <p>Port rating&nbsp;</p>                                
-                                <span class="fa fa-star checked"></span>
+                                <p>Port rating</p>                                
+                                <span class="fa fa-star checked pdl-10"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </div>
                         </div>
-                        <div class="port__img-container">
+                        <div class="port__img-container mgt-20">
                             <div class="port_img port__img--main">
                                 <img>
                             </div>
@@ -84,21 +84,21 @@
                     </div>
                 </section>
                 <section class="new-section content-max-width">
-                    <div class="content-padding">
+                    <form class="content-padding">
                         <!-- Date info -->  
                         <div class="port__date">
                             <div class="flex-column flex-1">
                                 <label for="start_date">Starting date</label>
-                                <input class="reserve__input non-clicable" type="date" id="start_date" name="start_date">
+                                <input class="reserve__input non-clicable mgt-10" type="date" id="start_date" name="start_date">
                             </div>   
                             <div class="flex-column flex-1">
                                 <label for="end_date">Ending date</label>
-                                <input class="reserve__input non-clicable" type="date" id="end_date" name="end_date">
+                                <input class="reserve__input non-clicable mgt-10" type="date" id="end_date" name="end_date">
                             </div>   
                             <div class="flex-column flex-1">
-                                <label for="spot">Select Category:</label>
-                                <select id="spot" class="port__dropdown">
-                                    <option value="select">Select</option>
+                                <label for="spots">Select Category:</label>
+                                <select id="spots" class="port__dropdown mgt-10" required>
+                                    <option value="">Select</option>
                                     <option value="spot1">Spot 1</option>
                                     <option value="spot2">Spot 2</option>
                                     <option value="spot3">Spot 3</option>
@@ -106,57 +106,57 @@
                             </div>                            
                         </div>
                         <!-- Other Informations -->  
-                        <div class="flex-row gap-40">
+                        <div class="port__other-info mgt-20">
                             <div class="flex-2">
                                 <h2>Information about the port</h2>
-                                <p>Port of Felixstowe is a prestigious marina in United Kingdoms, renowned for its exclusive berths, stunning coastal views, and luxurious atmosphere. It attracts high-end yachts and offers premium services in the heart of the picturesque Felixstowe village.</p>
-                                <h3>Available port amenities</h3>
-                                <div class="port__amanities">
+                                <p class="mgt-10">Port of Felixstowe is a prestigious marina in United Kingdoms, renowned for its exclusive berths, stunning coastal views, and luxurious atmosphere. It attracts high-end yachts and offers premium services in the heart of the picturesque Felixstowe village.</p>
+                                <h3 class="mgt-20">Available port amenities</h3>
+                                <div class="port__amanities mgt-10">
                                     <div class="flex-row flex-left align">
                                         <span class="fa fa-check port_available"></span>
-                                        <p>Security</p>
+                                        <p class="mgl-10">Security</p>
                                     </div>
                                     <div class="flex-row flex-left align">
                                         <span class="fa fa-check port_available"></span>
-                                        <p>Accommodation</p>
+                                        <p class="mgl-10">Accommodation</p>
                                     </div>
                                     <div class="flex-row flex-left align">
                                         <span class="fa fa-check port_available"></span>
-                                        <p>Restaurant</p>
+                                        <p class="mgl-10">Restaurant</p>
                                     </div>
                                     <div class="flex-row flex-left align">
                                         <span class="fa fa-check port_available"></span>
-                                        <p>Fuel</p>
+                                        <p class="mgl-10">Fuel</p>
                                     </div>
                                     <div class="flex-row flex-left align">
                                         <span class="fa fa-check port_available"></span>
-                                        <p>Wi-Fi</p>
+                                        <p class="mgl-10">Wi-Fi</p>
                                     </div>
                                     <div class="flex-row flex-left align">
                                         <span class="fa fa-check port_available"></span>
-                                        <p>Electricity</p>
+                                        <p class="mgl-10">Electricity</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <h2>Contact infomration</h2>
-                                    <div class="flex-row">
-                                        <div class=" flex-row">
+                                <div class="mgt-20">
+                                    <h2>Contact information</h2>
+                                    <div class="port__contanct mgt-10">
+                                        <div class="flex-row">
                                             <span class="fa fa-user"></span>
-                                            <p>username</p>
+                                            <p class="pdl-10">username</p>
                                         </div>
                                         <div class="flex-row">
                                             <span class="fa fa-envelope"></span>
-                                            <p>contact-email@company.com</p>
+                                            <p class="pdl-10">contact-email@company.com</p>
                                         </div>
                                         <div class="flex-row">
                                             <span class="fa fa-phone"></span>
-                                            <p>(123) 456 - 789 - 869</p>
+                                            <p class="pdl-10">(123) 456 - 789 - 869</p>
                                         </div>
                                     </div>
                                 </div>                                
                             </div>
-                            <div class="flex-right flex-1">
-                                <div class="port__price flex-column">
+                            <div class="flex-1">
+                                <div class="port__price flex-column  margin-align">
                                     <div class="flex-row flex-center align">
                                         <span class="fa fa-check port_available"></span>
                                         <p>Selected spot is available</p>
@@ -167,22 +167,23 @@
                                         <p>$59 / day</p>
                                     </div>
                                     <div>
-                                        <a class="button-basic port__button">Reserve</a>
+                                        <button class="button-basic button-basic--button" type="submit" value="Submit">Reserve</button>
                                     </div>
                                     
                                 </div>  
                             </div>
-                        </div>  
-                        <div>
-                            <h2>Location</h2>
-                            <div class="flex-row flex-left">
-                                <span class="fa fa-map-marker"></span>
-                                <p>Tomline House The Dock, Felixtone IP11 3SY, UK</p>
-                            </div>
-                            <div id="googleMap" style="width:100%;height:400px;"></div>
+                        </div>                          
+                    </form>                        
+                </section>
+                <section class="new-section content-max-width">
+                    <div class="content-padding">
+                        <h2 class="mgt-20">Location</h2>
+                        <div class="flex-row flex-left mgt-10">
+                            <span class="fa fa-map-marker"></span>
+                            <p>Tomline House The Dock, Felixtone IP11 3SY, UK</p>
                         </div>
+                        <div class="mgt-20" id="googleMap" style="width:100%;height:400px;"></div>
                     </div>
-
                 </section>
             </main>
             

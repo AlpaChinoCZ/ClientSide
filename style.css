@@ -237,7 +237,9 @@ main {
 .align{
     align-items: center;
 }
-
+.margin-align{ 
+    margin: auto;
+}
 /* HEADER */
 
 .header {
@@ -692,13 +694,13 @@ footer ul li a {
 /* PORT */
 .port__img-container{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto auto;
     gap:50px;
     row-gap: 20px;
     grid-template-areas: 
-    "mainImg . ."
-    "mainImg . .";
+    "mainImg mainImg"
+    ". .";
 }
 
 .port_img{   
@@ -710,6 +712,7 @@ footer ul li a {
 
 .port__img--main{
     grid-area: mainImg;
+    aspect-ratio: 1;
 }
 .port__img--side{
     aspect-ratio: 1;
@@ -730,8 +733,7 @@ footer ul li a {
 
 .port__date{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
     gap:50px;
 }
 
@@ -743,23 +745,40 @@ footer ul li a {
     border: 1px solid #ccc;
 }
 
+
 .port__price{
     aspect-ratio: 1;
     background-color: var(--section-dark);
     border-radius: 20px; 
     padding: 20px;   
     text-align: center;
+    max-width: 300px;
 }
 
-.port__button{
-    width: auto;   
-}
 
 .port__amanities{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
     gap: 20px;
     row-gap: 20px;
+}
+
+.port__other-info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: start;
+}
+
+.port__contanct{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+
+}
+.port__contanct .flex-row{
+    justify-content: left;
 }
 
 /* RESERVATION */
@@ -963,6 +982,23 @@ footer ul li a {
         flex-direction: row;
         
     }
+    
+    .port__amanities{
+        grid-template-columns: auto auto auto;
+    }
+
+    .port__contanct{
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .port__contanct .flex-row{
+        justify-content: space-between;
+    }
+    .port__date{
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-auto-rows: 1fr;
+    }
 }
 
 @media (min-width: 920px){    
@@ -999,5 +1035,18 @@ footer ul li a {
         padding-left: 50px;
         margin-top: 0;
     }
-    
+    .port__img-container{
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-areas: 
+        "mainImg . ."
+        "mainImg . .";
+    }
+    .port__other-info{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .port__amanities{
+        grid-template-columns: auto auto auto auto;
+    }
 }
