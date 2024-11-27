@@ -1,25 +1,24 @@
 function onSearchClick(){
-    document.getElementById('search-btn').onclick = function() {
+    console.log("ahoj11");
+    var element = document.getElementById('expand');
+    var   style = window.getComputedStyle(element);
+    var  top = style.getPropertyValue('display');
 
-        var element = document.getElementById('expand'),
-            style = window.getComputedStyle(element),
-            top = style.getPropertyValue('display');
-
-        if (top === "none"){
-            var elements = document.getElementsByClassName("can-disable")
-            for(var i = 0; i < elements.length; i++) {
-                elements[i].classList.toggle('disable-nav')
-            }
-            document.getElementById('expand').classList.toggle('expanded')
-        }
-    }
-
-    document.getElementById('search-close-btn').onclick = function() {
-        document.getElementById('expand').classList.toggle('expanded')
+    if (top === "none"){
         var elements = document.getElementsByClassName("can-disable")
         for(var i = 0; i < elements.length; i++) {
             elements[i].classList.toggle('disable-nav')
         }
+        document.getElementById('expand').classList.toggle('expanded')
+    }
+}
+
+function onSearchClose(){
+    console.log("ahoj22");
+    document.getElementById('expand').classList.toggle('expanded')
+    var elements = document.getElementsByClassName("can-disable")
+    for(var i = 0; i < elements.length; i++) {
+        elements[i].classList.toggle('disable-nav')
     }
 }
 
@@ -34,26 +33,29 @@ function myMap() {
 
 
 /** FAQ */
-const toggles = document.querySelectorAll('.faq-toggle');
+window.onload = function(){
+    const toggles = document.querySelectorAll('.faq-toggle');
 
-toggles.forEach(toggle => {
-	toggle.addEventListener('click', () => {
-		toggle.parentNode.classList.toggle('active');
-	});
-});
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            toggle.parentNode.classList.toggle('active');
+        });
+    });
+    
+    // SOCIAL PANEL JS
+    const floating_btn = document.querySelector('.floating-btn');
+    const close_btn = document.querySelector('.close-btn');
+    const social_panel_container = document.querySelector('.social-panel-container');
+    
+    floating_btn.addEventListener('click', () => {
+        social_panel_container.classList.toggle('visible')
+    });
+    
+    close_btn.addEventListener('click', () => {
+        social_panel_container.classList.remove('visible')
+    });    
+}
 
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
-
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
-
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});
 
 
 // login

@@ -19,12 +19,12 @@
             </li>
             <li class="search-container">                            
                 <form action="/search" method="get">                                
-                    <label class="search-button" id="search-btn" for="searchright">
+                    <label class="search-button" id="search-btn" onclick="onSearchClick()" for="searchright">
                         <span class="mglass">&#9906;</span>
                     </label>
                 </form>
                 <div class="search-expand" id ="expand">
-                    <div class="search-close" id="search-close-btn">
+                    <div class="search-close" id="search-close-btn" onclick="onSearchClose()">
                         <p class="pdl-10">Close></p>
                     </div>
                     <input class="search-bar" type="text" placeholder="Search..">

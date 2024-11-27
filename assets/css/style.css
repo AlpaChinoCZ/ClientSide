@@ -475,6 +475,7 @@ footer ul li a {
 
 /* SEARCHBAR */
 .search-container {
+    display: none;
 	position: relative;
 	height: 45px;
 	width: 45px;
@@ -1048,7 +1049,10 @@ footer ul li a {
     }
 }
 
-@media (min-width: 920px){    
+@media (min-width: 920px){   
+    .search-container{
+        display: block;
+    } 
     .section__container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
