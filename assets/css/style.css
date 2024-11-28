@@ -455,7 +455,7 @@ nav ul li a:hover {
 }
     
 .with-decoration .new-section:nth-child(even){
-    background-color: var(--color-light);
+    background-color: #EFF0FE;
 }
 
 
@@ -695,24 +695,11 @@ footer ul li a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 20px;
-    row-gap: 20px;
+    gap: 40px;
+    row-gap: 40px;
     margin-top: 20px;
 }
 
-.port__img{
-    position: relative;
-    height: 200px;
-}
-
-.port__img img{   
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-    object-position: top;
-    display:block;
-    border-radius: 10px;
-}
 
 .port__rating {
     position: absolute;
@@ -727,13 +714,44 @@ footer ul li a {
     padding-left:10px;
 }
 
-.port__block {
-    padding: 15px;
-    background-color: var(--color-light);
-    border: solid;
-    border-width: 1px;
-    border-color: var(--color-dark);
-    border-radius: 20px;
+.card{
+    position: relative;
+    display: flex;
+    flex-direction:  column;
+    justify-content: start;
+    border-radius: 20px;box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card__img{
+    height:200px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--color2);
+}
+.card a:hover{
+    color: var(--color4);
+    transition-duration: 0.4s;
+}
+
+.card__img img{   
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: top;
+    display:block;
+    border-radius: 10px;
+}
+
+.card__info{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
 }
 
 .port__button{
@@ -775,9 +793,10 @@ footer ul li a {
 
 .search__filter-block {
     /*width: 250px;*/
-    background-color:  var(--section-dark);
+    background-color:  var(--color-white);
     border-radius: 20px;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .serach__container{
@@ -798,8 +817,8 @@ footer ul li a {
 .serach__results{
     display: grid;    
     grid-template-columns: 1fr;
-    gap: 20px;
-    row-gap: 20px;
+    gap: 40px;
+    row-gap: 40px;
 }
 
 
