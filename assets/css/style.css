@@ -14,13 +14,26 @@
     --section-light: white;
     --section-dark: #cce0ff;
 
-    --button-color: #27017d;
-
     --min-sm: 576px;    /*small*/
     --min-md: 768px;    /*medium*/
     --min-lg: 992px;    /*large*/
     --min-xl: 1200px;   /*x-large*/
     --min-xxl: 1400px;  /*xx-large*/
+
+    /* Color Theme Swatches in Hex */
+    --color1: #BFBFBF;
+    --color2: #140DD9; 
+    --color3: #110BBF; 
+    --color4: #0D088C; 
+    --color5: #0B0F59; 
+
+    --button-light: white;
+    --button-dark: var(--color4);
+    --button-hover-light: var(--color1);
+    --button-hover-dark: var(--color2);
+
+    --color-header: var(--color5);
+    --color-footer: var(--color5);
 }
 
 /* GLOBAL */
@@ -70,7 +83,7 @@ main {
     display: inline-block;
     width: auto;
     height: 45px;
-    background-color: var(--button-color);
+    background-color: var(--button-dark);
     border-radius: 100vh;
     text-align: center;
     line-height: 45px;
@@ -87,9 +100,17 @@ main {
 
 .button-basic:hover {
 	transition-duration: 0.4s;
-	background-color: white;
-	color: black;
+	background-color: var( --button-hover-dark);
     cursor: pointer;
+}
+
+.button-basic--light{
+	background-color: var( --button-light);
+    color: black;
+}
+
+.button-basic--light:hover{
+	background-color: var(--button-hover-light);
 }
 
 .mgt-5{
@@ -242,7 +263,7 @@ main {
 /* HEADER */
 
 .header {
-    background: var(--color-dark);
+    background: var(--color5);
     width: 100%;
     position: absolute;
     z-index: 2000;
@@ -324,6 +345,7 @@ nav {
     order: 1;
     margin-right: 20px;
     z-index: 3000;
+    cursor: pointer;
   }
 
 #check {
@@ -442,7 +464,7 @@ footer {
     height: 100%;
     width: 100%;
     text-align: center;
-    background-color: var(--color-dark);
+    background-color: var(--color-footer);
     color: white;
 }
 
@@ -535,13 +557,13 @@ footer ul li a {
 }
 
 .search-button {
-    background-color: var(--button-color);
+    background-color: var(--button-light);
     border-radius: 100vh;
 	font-size: 14px;
 	height: 45px;
 	line-height: 45px;
 	text-align: center;
-	color: white;
+	color: black;
 	text-decoration: none;
 	cursor: pointer;
 	user-select: none;
@@ -550,21 +572,22 @@ footer ul li a {
 	width: 45px;    
 	z-index: 2500;
 }
+
 .search-button:hover{
 	transition-duration: 0.4s;
-	background-color: white;
-	color: black;
+	background-color: var(--button-hover-light);
 }
 
 .search-expand {
     position: absolute;
     display: none;
     align-items: center;
+    color: black;
     height: 45px;
     right: 25px;
 	z-index: 2300;
     border: none;
-    background-color: var(--button-color);
+    background-color: var(--button-light);
     border-radius: 100vh;
 }
 
@@ -585,12 +608,13 @@ footer ul li a {
 
 .search-bar {    
     border: none; /* Optional: Remove border if present */
-    box-shadow: inset 0 0 0 1px #444;
+    /*box-shadow: inset 0 0 0 1px #444;*/
     border-radius: 100vh 0px 0px 100vh;
     height: 100%;
     width: 100%;
     padding-left: 20px;
     outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .mobile{
