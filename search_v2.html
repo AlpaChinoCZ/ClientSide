@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BerthRent</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/assets/js/fetchHeaderFooter.js"></script>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">            
+            <div id="header-placeholder"></div>
+    
+            <main class="content-max-width">
+                <section class="new-section--first content-padding">
+                    <h1>We found 6 available ports</h1>
+                    <p class="mgt-20">We've matched your search criteria and found these options for you!</p>
+                    <p>To refine your search further and discover the best match, use the filters on the left-hand side.</p>
+                    <p>Ready to book? Select a port to see more details, including pricing, amenities, and availability.</p>
+                    <form class="filter mgt-20">
+                        <div class="filter__section">
+                            <div class="flex-column flex-1">
+                                <label for="country">Country</label>
+                                <input class="reserve__input mgt-10" id="country" placeholder="Type a country" required>                                                    
+                            </div>
+                            <div class="flex-column flex-1">
+                                <label for="start_date">Starting date</label>
+                                <input class="reserve__input mgt-10" type="date" id="start_date" name="start_date" required>
+                            </div>
+                            <div class="flex-column flex-1">
+                                <label for="end_date">Ending date</label>
+                                <input class="reserve__input mgt-10" type="date" id="end_date" name="end_date" required>
+                            </div>
+                        </div>
+                        <div class="filter__section">
+                            <div class="flex-column flex-1">
+                                <label for="start_date">Max length</label>
+                                <input class="reserve__input mgt-10" type="text" id="start_date" name="start_date" placeholder="Enter your boat's lenght" required>
+                            </div>
+                            <div class="flex-column flex-1">
+                                <label for="end_date">Max width</label>
+                                <input class="reserve__input mgt-10" type="text" id="end_date" name="end_date" placeholder="Enter your boat's width" required>
+                            </div>                                    
+                            <div class="flex-column flex-1">
+                                <label for="end_date">Max draft</label>
+                                <input class="reserve__input mgt-10" type="text" id="end_date" name="end_date" placeholder="Enter your boat's draft" required>
+                            </div>   
+                        </div>
+                        <div class="filter__checkbox">
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Fuel
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>     
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Security
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>      
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Wi-fi
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>        
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Accommodation
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>   
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Frash water
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>       
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Restaurant
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div> 
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Laundry
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div>  
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Car park
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div> 
+                            <div class="checkbox-wrapper">
+                                <label class="control control--checkbox">
+                                    Electricity
+                                    <input type="checkbox" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                            </div> 
+                        </div>
+                        <div class="filter__buttons">                      
+                            <button class="button-basic button-basic--button" type="reset" >Reset filters</button>   
+                            <button class="button-basic button-basic--button" type="submit" >Apply</button>                      
+                        </div>
+                    </form>
+                    <div class="filter-search mgt-20">
+                        <div>
+                            <h2>Browse all available ports</h2>
+                            <p>Ready to book? Select a port below to see more details!</p>
+                        </div>
+                        <div class="flex-row">
+                            <p class="mgb-5">Filter search result by:</p>
+                            <select id="filter" class="serach__dropdown">
+                                <option value="none">None</option>
+                                <option value="price">Price</option>
+                                <option value="fate">Date</option>
+                                <option value="destination">Destination</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="serach__results_v2 mgt-20">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/img/MarineBerth.avif">
+                                <div class="port__rating flex-row">
+                                    <span class="fa fa-star"></span>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="mgt-10">Port of Felixtowe</h3>
+                                <p class="mgt-10">United Kingdoms</p>
+                                <div class="mgt-10 port__info">
+                                    <p>Bert size: Various</p>
+                                </div>
+                                <div class="flex-row">
+                                    <div>
+                                        <p>Price: 51$ / day</p>
+                                    </div>
+                                    <div>
+                                        <a class="flex-right" href="/port.html">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/img/MarineBerth.avif">
+                                <div class="port__rating flex-row">
+                                    <span class="fa fa-star"></span>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="mgt-10">Port of Felixtowe</h3>
+                                <p class="mgt-10">United Kingdoms</p>
+                                <div class="mgt-10 port__info">
+                                    <p>Bert size: Various</p>
+                                </div>
+                                <div class="flex-row">
+                                    <div>
+                                        <p>Price: 51$ / day</p>
+                                    </div>
+                                    <div>
+                                        <a class="flex-right" href="/port.html">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/img/MarineBerth.avif">
+                                <div class="port__rating flex-row">
+                                    <span class="fa fa-star"></span>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="mgt-10">Port of Felixtowe</h3>
+                                <p class="mgt-10">United Kingdoms</p>
+                                <div class="mgt-10 port__info">
+                                    <p>Bert size: Various</p>
+                                </div>
+                                <div class="flex-row">
+                                    <div>
+                                        <p>Price: 51$ / day</p>
+                                    </div>
+                                    <div>
+                                        <a class="flex-right" href="/port.html">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/img/MarineBerth.avif">
+                                <div class="port__rating flex-row">
+                                    <span class="fa fa-star"></span>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="mgt-10">Port of Felixtowe</h3>
+                                <p class="mgt-10">United Kingdoms</p>
+                                <div class="mgt-10 port__info">
+                                    <p>Bert size: Various</p>
+                                </div>
+                                <div class="flex-row">
+                                    <div>
+                                        <p>Price: 51$ / day</p>
+                                    </div>
+                                    <div>
+                                        <a class="flex-right" href="/port.html">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/img/MarineBerth.avif">
+                                <div class="port__rating flex-row">
+                                    <span class="fa fa-star"></span>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="mgt-10">Port of Felixtowe</h3>
+                                <p class="mgt-10">United Kingdoms</p>
+                                <div class="mgt-10 port__info">
+                                    <p>Bert size: Various</p>
+                                </div>
+                                <div class="flex-row">
+                                    <div>
+                                        <p>Price: 51$ / day</p>
+                                    </div>
+                                    <div>
+                                        <a class="flex-right" href="/port.html">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./assets/img/MarineBerth.avif">
+                                <div class="port__rating flex-row">
+                                    <span class="fa fa-star"></span>
+                                    <p>4.0</p>
+                                </div>
+                            </div>
+                            <div class="card__info">
+                                <h3 class="mgt-10">Port of Felixtowe</h3>
+                                <p class="mgt-10">United Kingdoms</p>
+                                <div class="mgt-10 port__info">
+                                    <p>Bert size: Various</p>
+                                </div>
+                                <div class="flex-row">
+                                    <div>
+                                        <p>Price: 51$ / day</p>
+                                    </div>
+                                    <div>
+                                        <a class="flex-right" href="/port.html">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>                               
+                        </div>
+                    </div> 
+                </section>
+            </main>
+            
+            <div id="footer-placeholder"></div>          
+        </div>        
+    </body>
+</html>

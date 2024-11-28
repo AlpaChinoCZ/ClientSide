@@ -499,6 +499,19 @@ footer {
 
 .socials__part--right{
     justify-content: right;
+    gap: 40px;
+}
+
+.socials__part--right a{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.socials__part--right a:hover{
+    transition-duration: 0.4s;
+    color: var(--color1);
+    font-size: 27px;
 }
 
 .logo__footer{
@@ -774,7 +787,7 @@ footer ul li a {
     width: 250px;
 }
 
-/* SEARCH */
+/* SEARCH SITE*/
 .search{
     display: grid;
     grid-template-columns: auto;
@@ -821,6 +834,54 @@ footer ul li a {
     row-gap: 40px;
 }
 
+/* SEARCH V2 */
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: space-between;    
+}
+
+.filter__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:20px;
+}
+
+
+
+.filter__checkbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    row-gap: 20px;
+}
+
+.filter__buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:20px;
+}
+.serach__results_v2{
+    display: grid;    
+    grid-template-columns: 1fr;
+    gap: 40px;
+    row-gap: 40px;
+}
+
+.filter-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.filter-search__{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
 
 
 /* PORT */
@@ -1151,6 +1212,22 @@ footer ul li a {
         padding-right: 0;
         border-right: none;
     }
+
+    /* search-v2*/
+    
+    .filter__checkbox{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .serach__results_v2{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .filter-search{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
 }
 
 @media (min-width: 920px){ 
@@ -1227,7 +1304,23 @@ footer ul li a {
     }
     .port__amanities{
         grid-template-columns: auto auto auto auto;
-    }    
+    }   
+    
+    /* serach_v2*/
+    
+    .filter__section{
+        flex-direction: row;
+        justify-content: space-between;
+    }       
+    
+    .filter__checkbox{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .filter__buttons{
+        flex-direction: row;
+        justify-content: end;
+    }
 }
 
 
