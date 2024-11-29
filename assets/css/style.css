@@ -1058,6 +1058,62 @@ footer ul li a {
     gap: 20px;
 }
 
+/* CONTACT */
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    flex:1;
+}
+
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-white);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 20px;
+    padding: 20px;
+    flex:1;
+}
+
+.contanct__message{
+    min-height: 200px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    padding: 20px;
+}
+
+.contanct__message:focus, .contact__form input:focus{
+    outline: 2px solid var(--color4);
+}
+
+.contact a{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color2);
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+.contact a:hover{
+    transition-duration: 0.4s;
+    color: var(--color1);
+    font-size: 27px;
+}
 
 /* RESERVATION */
 .reservation{
@@ -1329,6 +1385,11 @@ footer ul li a {
     .port__reserve-block-small{
         flex:1;
     }
+
+    /* contanct */
+    .contact{
+        flex-direction: row;
+    }    
 }
 
 @media (min-width: 920px){ 
