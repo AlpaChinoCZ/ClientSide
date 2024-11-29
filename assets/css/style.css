@@ -812,6 +812,10 @@ footer ul li a {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+.search input:focus{
+    outline: 2px solid var(--color4);
+}
+
 .serach__container{
     padding-left: 0;
     margin-top: 50px;
@@ -849,7 +853,9 @@ footer ul li a {
     gap:20px;
 }
 
-
+.filter input:focus{
+    outline: 2px solid var(--color4);
+}
 
 .filter__checkbox{
     display: grid;
@@ -951,13 +957,18 @@ footer ul li a {
 
 .port__price{
     aspect-ratio: 1;
-    background-color: var(--section-dark);
+    background-color: white;
     border-radius: 20px; 
     padding: 20px;   
     text-align: center;
     max-width: 300px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
+.price{
+    font-size: 50px;
+    color: var(--color2);
+}
 
 .port__amanities{
     display: grid;
@@ -1018,7 +1029,35 @@ footer ul li a {
     aspect-ratio: 0;
 }
 
-.port__
+.port__reserve{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.port__reserve p{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--color2)
+}
+
+.port__reserve-block-big{
+    flex:1;
+}
+.port__reserve-block-small{
+    flex:1;
+}
+
+.port__reserve-gird{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    gap: 20px;
+}
+
 
 /* RESERVATION */
 .reservation{
@@ -1264,6 +1303,32 @@ footer ul li a {
         justify-content: space-between;
         align-items: end;
     }
+
+    /*port v2*/
+    .port__reserve-gird{
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
+        grid-template-areas: 
+          ". ."
+          "big big";
+        
+    }
+
+    .port__reserve-gird-big{
+        grid-area: big;
+    }
+
+    
+    .port__reserve{
+        flex-direction: row;
+        align-items: center;
+    }
+    .port__reserve-block-big{
+        flex:2;
+    }
+    .port__reserve-block-small{
+        flex:1;
+    }
 }
 
 @media (min-width: 920px){ 
@@ -1361,11 +1426,11 @@ footer ul li a {
     .port{
         flex-direction: row;
     }
-    .port__info{
-        padding-left: 40px;
-    }
     .port__img-grid{
         margin-bottom: 0;
+    }
+    .port__info--big{
+        padding-left: 40px;
     }
 }
 

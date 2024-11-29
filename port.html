@@ -53,11 +53,11 @@
                         <div class="port__date">
                             <div class="flex-column flex-1">
                                 <label for="start_date">Starting date</label>
-                                <input class="reserve__input non-clicable mgt-10" type="date" id="start_date" name="start_date">
+                                <input class="reserve__input mgt-10" type="date" id="start_date" name="start_date" required>
                             </div>   
                             <div class="flex-column flex-1">
                                 <label for="end_date">Ending date</label>
-                                <input class="reserve__input non-clicable mgt-10" type="date" id="end_date" name="end_date">
+                                <input class="reserve__input mgt-10" type="date" id="end_date" name="end_date" required>
                             </div>   
                             <div class="flex-column flex-1">
                                 <label for="spots">Select Category:</label>
@@ -121,14 +121,14 @@
                             </div>
                             <div class="flex-1">
                                 <div class="port__price flex-column  margin-align">
-                                    <div class="flex-row flex-center align">
+                                    <div class="flex-row flex-center align pdt-20">
                                         <span class="fa fa-check port_available"></span>
-                                        <p>Selected spot is available</p>
+                                        <p class="pdl-10"><b>Selected spot is available</b></p>
                                     </div>
                                     <div>
-                                        <p>Total price</p>
-                                        <p>$199</p>
-                                        <p>$59 / day</p>
+                                        <h3>Total price</h3>
+                                        <p  class="price"><b>€199</b></p>
+                                        <p>€59 / day</p>
                                     </div>
                                     <div>
                                         <button class="button-basic button-basic--button" type="submit" value="Submit">Reserve</button>

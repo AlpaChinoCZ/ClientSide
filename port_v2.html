@@ -29,7 +29,7 @@
                                 <img src="./assets/img/berth3.jpg">
                             </div>
                         </div>
-                        <div class="port__info">
+                        <div class="port__info port__info--big">
                             <div class="flex-row flex-left">
                                 <p>Port rating</p> 
                                 <div>       
@@ -89,8 +89,35 @@
                             </div>      
                         </div>
                     </div>
-                    <div>
-                        
+                    <div class="content-padding mgt-20">
+                        <form class="port__reserve">
+                            <div class="port__reserve-gird port__reserve-block-big">
+                                <div class="flex-column flex-1">
+                                    <label for="start_date">Starting date</label>
+                                    <input class="reserve__input mgt-10" type="date" id="start_date" name="start_date" required>
+                                </div>   
+                                <div class="flex-column flex-1">
+                                    <label for="end_date">Ending date</label>
+                                    <input class="reserve__input mgt-10" type="date" id="end_date" name="end_date" required>
+                                </div>   
+                                <div class="flex-column flex-1 port__reserve-gird-big">
+                                    <label for="spots">Select Category:</label>
+                                    <select id="spots" class="port__dropdown mgt-10" required>
+                                        <option value="">Select</option>
+                                        <option value="spot1">Spot 1</option>
+                                        <option value="spot2">Spot 2</option>
+                                        <option value="spot3">Spot 3</option>
+                                    </select>
+                                </div>                
+                            </div>
+                            <div class="port__reserve-block-small">
+                                <div class="flex-column align gap-20">
+                                    <h3>Total price</h3>
+                                    <p>€199</p>
+                                    <button class="button-basic button-basic--button">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </section>
             </main>
