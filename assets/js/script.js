@@ -58,8 +58,44 @@ window.onload = function(){
     close_btn.addEventListener('click', () => {
         social_panel_container.classList.remove('visible')
     });    
+
+
+   
 }
 
+function exploreClick(){
+    const form = document.getElementById('reserve-form');
+    const country = document.getElementById('country');
+    const startDate = document.getElementById('start_date');
+    const endDate = document.getElementById('end_date');
+
+    // Reset custom validity messages (in case they were set previously)
+    country.setCustomValidity('');
+    startDate.setCustomValidity('');
+    endDate.setCustomValidity('');
+
+    // Validate input fields
+    let valid = true;
+
+    if (!country.value) {
+        valid = false;
+    }
+
+    if (!startDate.value) {
+        valid = false;
+    }
+
+    if (!endDate.value) {
+        valid = false;
+    }
+
+    if (!valid) {
+        form.reportValidity();
+        return;
+    }
+
+    window.location.href = "/search.html";   
+}
 
 
 // login
