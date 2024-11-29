@@ -1510,14 +1510,14 @@ footer ul li a {
 /*LOGIN/Register*/
 
 /* Stylování pro kontejner formuláře */
+
 .form-container {
-    background: #fff;
+    margin-top: 0px;
+    background-color: #fff;
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
-    margin: auto; /* Středové zarovnání při vertikálním scrollu */
+    width: 400px;
     color: #5A4DBB;
 }
 .form-container h1 {
@@ -1529,7 +1529,7 @@ footer ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
     background-color: var(--section-light); /* Nebo jakoukoli barvu pozadí */
     padding: 20px; /* Pro případ menších obrazovek */
     
