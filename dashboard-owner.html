@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berth Rental Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/fetchHeaderFooter.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="header-placeholder"></div>
+        <main class="ales ">
+            <div class="dashboard-container">
+                <section class="new-section--first welcome-section content-max-width">
+                    <table class="welcome-table">
+                        <tr class="left">
+                            <td class="welcome-text">
+                                <h1>Welcome to your berth<br> rental dashboard!</h1>
+                                <p>
+                                    Here you can easily view your current reservations, including the details of your rented berths,
+                                    as well as your past bookings. Stay up to date with all your rentals and manage future bookings with just a few clicks.
+                                </p>
+                            </td>
+                            <td class="welcome-image">
+                                <img src="/assets/img/DALL·E%202024-11-26%2021.56.38%20-%20A%20scenic%20view%20of%20a%20harbor.webp" alt="Dashboard illustration">
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <!-- Owned Ports and Berths Section -->
+                <section class="ports-section content-max-width">
+                    <h2>Owned ports and berths</h2>
+                    <p>View and manage all your ports and berths, including availability and details for each.</p>
+                    <div class="table-container">
+                        <table class="custom-table">
+                            <tr>
+                                <td class="image-cell" rowspan="4">
+                                    <img src="assets/img/Aerial_view_of_the_Port_of_Felixstowe.jpg" alt="Port Image">
+                                </td>
+                                <td class="port-info" colspan="2">
+                                    <strong>United Kingdom</strong>
+                                    <h2>Port of Felixstowe</h2>
+                                </td>
+                                <td class="edit-cell" rowspan="4">
+                                    <button class="edit-button">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="berth-info">
+                                    Small Berth 01 – North Dock A<br>
+                                    <span>Max width: 5m | Max length: 8m | Draft: 2m</span>
+                                </td>
+                                <td class="status reserved"><span>Occupancy:</span><br> RESERVED</td>
+                            </tr>
+                            <tr>
+                                <td class="berth-info">
+                                    Small Berth 02 – North Dock A<br>
+                                    <span>Max width: 5m | Max length: 8m | Draft: 2m</span>
+                                </td>
+                                <td class="status available"><span>Occupancy:</span><br> AVAILABLE</td>
+                            </tr>
+                            <tr>
+                                <td class="berth-info">
+                                    Small Berth 03 – North Dock A<br>
+                                    <span>Max width: 5m | Max length: 8m | Draft: 2m</span>
+                                </td>
+                                <td class="status available"><span>Occupancy:</span><br> AVAILABLE</td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <!-- Register a New Port Section -->
+                    <div>
+                        <h3>Register a new port or berth</h3>
+                        <p>Add a new port or berth to your list and make it available for reservations easily.</p>
+                        <table class="table-container">
+                            <tr>
+                                <th><label for="fname" ><p>Country</p></label></th>
+                                <th><label for="lname" ><p>Port name</p></label></th>
+                                <th rowspan="2"><a href="register-port.html" class="rounded-button">Register</a></th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="fname" name="fname " placeholder="United Kingdom"></td>
+                                <td><input type="text" id="lname" name="lname" placeholder="Port of Felixstowe"></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Berth Rental History Section -->
+                <section class="ports-section content-max-width">
+                    <h2>Berth rental history</h2>
+                    <p>Keep track of all your past rentals and monitor the performance of your berths. Review<br> reservation details, rental durations to optimize your offerings.</p>
+                    <div class="table-container">
+                        <table class="custom-table">
+                            <tr>
+                                <th>
+                                    <p class="nameport">Port of Felixstowe<br><strong>United Kingdom</strong></p>
+
+                                </th>
+                                <td class="berth-info">
+                                    Small Berth 01 – North Dock A<br>
+                                    <span>Max width: 5m | Max length: 8m | Draft: 2m</span>
+                                </td>
+                                <td class="earned">
+                                    <span>Earned:</span>
+                                    <span class="amount">€199</span>
+                                    <span class="per-day">€59 /day</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button>&lt;</button>
+                        <span>1</span>
+                        <button>&gt;</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <div id="footer-placeholder"></div>
+    </div>
+
+
+</body>
+</html>

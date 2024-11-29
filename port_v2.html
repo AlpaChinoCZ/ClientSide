@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BerthRent</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/assets/js/fetchHeaderFooter.js"></script>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">            
+            <div id="header-placeholder"></div>
+    
+            <main>
+                <section class="new-section--first content-max-width">
+                    <h2 class=" content-padding">Port of Felixtowe</h2>
+                    <div class="port content-padding mgt-20">
+                        <div class="port__img-grid">
+                            <div class="port__img-block port__img--main">
+                                <img src="./assets/img/berth1.jpg">
+                            </div>
+                            <div class="port__img-block port__img--side">
+                                <img src="./assets/img/berth2.jpg">
+                            </div>
+                            <div class="port__img-block port__img--side">
+                                <img src="./assets/img/berth3.jpg">
+                            </div>
+                        </div>
+                        <div class="port__info port__info--big">
+                            <div class="flex-row flex-left">
+                                <p>Port rating</p> 
+                                <div>       
+                                    <span class="fa fa-star checked pdl-10"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>    
+                                <p class="pdl-10">4.7</p>                    
+                            </div>
+                            <h2 class="mgt-20">Information about the port</h2>
+                            <p class="mgt-20">Port of Felixstowe is a prestigious marina in United Kingdoms, renowned for its exclusive berths, stunning coastal views, and luxurious atmosphere. It attracts high-end yachts and offers premium services in the heart of the picturesque Felixstowe village.</p>
+                            <h3 class="mgt-20">Available port amenities</h3>
+                            <div class="port__amanities mgt-10">
+                                <div class="flex-row flex-left align">
+                                    <span class="fa fa-check port_available"></span>
+                                    <p class="mgl-10">Security</p>
+                                </div>
+                                <div class="flex-row flex-left align">
+                                    <span class="fa fa-check port_available"></span>
+                                    <p class="mgl-10">Accommodation</p>
+                                </div>
+                                <div class="flex-row flex-left align">
+                                    <span class="fa fa-check port_available"></span>
+                                    <p class="mgl-10">Restaurant</p>
+                                </div>
+                                <div class="flex-row flex-left align">
+                                    <span class="fa fa-check port_available"></span>
+                                    <p class="mgl-10">Fuel</p>
+                                </div>
+                                <div class="flex-row flex-left align">
+                                    <span class="fa fa-check port_available"></span>
+                                    <p class="mgl-10">Wi-Fi</p>
+                                </div>
+                                <div class="flex-row flex-left align">
+                                    <span class="fa fa-check port_available"></span>
+                                    <p class="mgl-10">Electricity</p>
+                                </div>
+                            </div>
+                            <div class="mgt-20">
+                                <h2>Contact information</h2>
+                                <div class="port__contanct mgt-10">
+                                    <div class="flex-row">
+                                        <span class="fa fa-user"></span>
+                                        <p class="pdl-10">username</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <span class="fa fa-envelope"></span>
+                                        <p class="pdl-10">contact-email@company.com</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <span class="fa fa-phone"></span>
+                                        <p class="pdl-10">(123) 456 - 789 - 869</p>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="content-padding mgt-20">
+                        <form class="port__reserve">
+                            <div class="port__reserve-gird port__reserve-block-big">
+                                <div class="flex-column flex-1">
+                                    <label for="start_date">Starting date</label>
+                                    <input class="reserve__input mgt-10" type="date" id="start_date" name="start_date" required>
+                                </div>   
+                                <div class="flex-column flex-1">
+                                    <label for="end_date">Ending date</label>
+                                    <input class="reserve__input mgt-10" type="date" id="end_date" name="end_date" required>
+                                </div>   
+                                <div class="flex-column flex-1 port__reserve-gird-big">
+                                    <label for="spots">Select Category:</label>
+                                    <select id="spots" class="port__dropdown mgt-10" required>
+                                        <option value="">Select</option>
+                                        <option value="spot1">Spot 1</option>
+                                        <option value="spot2">Spot 2</option>
+                                        <option value="spot3">Spot 3</option>
+                                    </select>
+                                </div>                
+                            </div>
+                            <div class="port__reserve-block-small">
+                                <div class="flex-column align gap-20">
+                                    <h3>Total price</h3>
+                                    <p>€199</p>
+                                    <button class="button-basic button-basic--button">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            
+            <div id="footer-placeholder"></div>  
+        </div>        
+    </body>
+</html>
