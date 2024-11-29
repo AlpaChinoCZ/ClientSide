@@ -1117,9 +1117,11 @@ footer ul li a {
 
 /* RESERVATION */
 .reservation{
-    background-color: var(--section-dark);
+    background-color: var(--color-white);
     border-radius: 20px;
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .reservation__field{
@@ -1130,6 +1132,10 @@ footer ul li a {
     padding-right: 20px;
     background-color: var(--section-light);
     line-height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(136, 136, 136, 0.534);
 }
 
 /* ABOUT */

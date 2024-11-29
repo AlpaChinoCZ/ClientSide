@@ -63,38 +63,25 @@ window.onload = function(){
    
 }
 
-function exploreClick(){
-    const form = document.getElementById('reserve-form');
-    const country = document.getElementById('country');
-    const startDate = document.getElementById('start_date');
-    const endDate = document.getElementById('end_date');
+function submitClick(button, path)
+{
+    const form = button.closest("form")
+    const requiredElements = form.querySelectorAll(":required");
 
-    // Reset custom validity messages (in case they were set previously)
-    country.setCustomValidity('');
-    startDate.setCustomValidity('');
-    endDate.setCustomValidity('');
-
-    // Validate input fields
     let valid = true;
 
-    if (!country.value) {
-        valid = false;
-    }
-
-    if (!startDate.value) {
-        valid = false;
-    }
-
-    if (!endDate.value) {
-        valid = false;
-    }
+    requiredElements.forEach(element => {
+        if(!element.value){
+            valid = false;
+        }
+    });
 
     if (!valid) {
         form.reportValidity();
         return;
     }
 
-    window.location.href = "/search.html";   
+    window.location.href = path;  
 }
 
 
