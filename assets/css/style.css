@@ -1537,12 +1537,12 @@ footer ul li a {
 
 
 /* Odkaz na registraci */
-form a {
+.ales form a {
     color: #007bff;
     text-decoration: none;
 }
 
-form a:hover {
+.ales form a:hover {
     text-decoration: underline;
 }
 /*hover tlacitka*/
